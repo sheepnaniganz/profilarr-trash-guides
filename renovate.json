@@ -4,8 +4,8 @@
     "config:recommended"
   ],
   "pep723": {
-    "fileMatch": [
-      "scripts/generate\\.py"
+    "managerFilePatterns": [
+      "/scripts/generate\\.py/"
     ]
   }
 }
