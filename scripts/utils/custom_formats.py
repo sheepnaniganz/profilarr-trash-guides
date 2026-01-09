@@ -1,15 +1,16 @@
-import os
 import json
-import yaml
+import os
 
+import yaml
 from markdownify import markdownify
 
-from utils.mappings.languages import LANGUAGE_MAPPING
 from utils.mappings.indexer_flags import INDEXER_FLAG_MAPPING
-from utils.mappings.release_type import RELEASE_TYPE_MAPPING
+from utils.mappings.languages import LANGUAGE_MAPPING
 from utils.mappings.quality_modifiers import QUALITY_MODIFIER_MAPPING
+from utils.mappings.release_type import RELEASE_TYPE_MAPPING
 from utils.mappings.source import SOURCE_MAPPING
 from utils.strings import get_name, get_regex_pattern_name
+
 
 IMPLEMENTATION_TO_TAG_MAPPING = {
     "ReleaseTitleSpecification": "Release Title",
@@ -127,7 +128,7 @@ def collect_custom_formats(service, input_dir, output_dir, custom_regex_patterns
 
             file_path = os.path.join(root, filename)
             file_stem = os.path.splitext(filename)[0]  # Filename without extension
-            with open(file_path, "r", encoding="utf-8") as f:
+            with open(file_path, encoding="utf-8") as f:
                 data = json.load(f)
 
             trash_id = data.get("trash_id")

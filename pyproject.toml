@@ -1,0 +1,58 @@
+[project]
+name = "profilarr-trash-guides"
+version = "0.1.0"
+description = "Generates a Profilarr database from TRaSH-Guides data"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pyyaml",
+    "markdownify",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "pytest-mock>=3.10",
+]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "pytest-mock>=3.10",
+    "pylint>=3.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_functions = "test_*"
+python_classes = "Test*"
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+    "unit: marks tests as unit tests",
+    "regression: marks tests as regression tests",
+]
+addopts = "-v --tb=short --strict-markers"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+
+[tool.pylint.messages_control]
+disable = [
+    "C0103",  # invalid-name (allows flexible naming)
+    "C0114",  # missing-module-docstring
+    "C0115",  # missing-class-docstring
+    "C0116",  # missing-function-docstring
+    "W0212",  # protected-access (allows _private for fixtures)
+    "R0913",  # too-many-arguments
+]
+
+[tool.pylint.format]
+max-line-length = 100
+
+[tool.pylint.design]
+max-attributes = 10
+
+[tool.pylint.basic]
+good-names = ["i", "j", "k", "x", "y", "z", "_", "f", "df", "e"]

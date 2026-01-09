@@ -1,0 +1,35 @@
+repos:
+  - repo: https://github.com/pylint-dev/pylint
+    rev: pylint-3.0.3
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: python
+        types: [python]
+        args: [--max-line-length=100]
+        require_serial: true
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+        name: Trim trailing whitespace
+      - id: end-of-file-fixer
+        name: Fix end of file
+      - id: check-yaml
+        name: Check YAML
+        args: [--unsafe]
+      - id: check-json
+        name: Check JSON
+      - id: detect-private-key
+        name: Detect private keys
+      - id: debug-statements
+        name: Check for debugger statements
+
+  - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+    rev: v2.11.0
+    hooks:
+      - id: pretty-format-yaml
+        name: Format YAML
+        args: [--autofix, --indent=2]

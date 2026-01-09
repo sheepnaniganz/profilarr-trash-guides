@@ -1,0 +1,19 @@
+{
+  "trash_id": "test-id-2",
+  "name": "Test Source Format",
+  "description": "Test format with source specification",
+  "trash_scores": {
+    "default": 50
+  },
+  "specifications": [
+    {
+      "name": "Source Spec",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 1
+      }
+    }
+  ]
+}

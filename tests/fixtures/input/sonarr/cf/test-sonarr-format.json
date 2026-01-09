@@ -1,0 +1,19 @@
+{
+  "trash_id": "sonarr-test-id-1",
+  "name": "Test Sonarr Format",
+  "description": "Test format for Sonarr",
+  "trash_scores": {
+    "default": 75
+  },
+  "specifications": [
+    {
+      "name": "Sonarr Test Pattern",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "SONARR"
+      }
+    }
+  ]
+}

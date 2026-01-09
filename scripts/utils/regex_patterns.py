@@ -1,8 +1,10 @@
-import os
 import json
+import os
+
 import yaml
 
 from utils.strings import get_regex_pattern_name, get_safe_name
+
 
 duplicate_regex_patterns = {}
 
@@ -90,7 +92,7 @@ def collect_regex_patterns(service, input_dir, output_dir):
 
             file_path = os.path.join(root, filename)
             file_stem = os.path.splitext(filename)[0]  # Filename without extension
-            with open(file_path, "r", encoding="utf-8") as f:
+            with open(file_path, encoding="utf-8") as f:
                 data = json.load(f)
             collect_regex_pattern(service, file_stem, data, output_dir)
 

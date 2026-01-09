@@ -1,18 +1,12 @@
-# /// script
-# requires-python = ">=3.13"
-# dependencies = [
-#     "markdownify",
-#     "pyyaml",
-# ]
-# ///
 import os
 import sys
-import yaml
 
+import yaml
 from utils.custom_formats import collect_custom_formats
-from utils.regex_patterns import collect_regex_patterns
-from utils.profiles import collect_profiles
 from utils.media_management import collect_media_management
+from utils.profiles import collect_profiles
+from utils.regex_patterns import collect_regex_patterns
+
 
 # Prevent aliases from showing up
 yaml.Dumper.ignore_aliases = lambda *args: True
@@ -20,7 +14,7 @@ yaml.Dumper.ignore_aliases = lambda *args: True
 
 def clear_output_dir(output_dir):
     if not os.path.exists(output_dir):
-        print(f"Output directory does not exist, skipping clearing")
+        print("Output directory does not exist, skipping clearing")
     else:
         for filename in os.listdir(output_dir):
             file_path = os.path.join(output_dir, filename)

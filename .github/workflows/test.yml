@@ -1,0 +1,140 @@
+name: Test Suite
+
+on:
+  push:
+    branches: [ stable, main ]
+  pull_request:
+    branches: [ stable, main ]
+  workflow_dispatch:
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.13", "3.14"]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Install test dependencies
+        run: |
+          uv pip install pytest pytest-cov pytest-mock pyyaml markdownify
+
+      - name: Run unit tests
+        run: |
+          cd /home/runner/work/profilarr-trash-guides/profilarr-trash-guides
+          python -m pytest tests/unit/ -v --tb=short
+
+  integration-tests:
+    runs-on: ubuntu-latest
+    needs: unit-tests
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Install test dependencies
+        run: |
+          uv pip install pytest pytest-cov pytest-mock pyyaml markdownify
+
+      - name: Run integration tests
+        run: |
+          cd /home/runner/work/profilarr-trash-guides/profilarr-trash-guides
+          python -m pytest tests/integration/ -v --tb=short
+
+  end-to-end-tests:
+    runs-on: ubuntu-latest
+    needs: integration-tests
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Install test dependencies
+        run: |
+          uv pip install pytest pytest-cov pytest-mock pyyaml markdownify
+
+      - name: Clone TRaSH-Guides (optional for full testing)
+        run: |
+          git clone https://github.com/TRaSH-Guides/Guides.git TRaSH-Guides || true
+
+      - name: Run end-to-end tests
+        run: |
+          cd /home/runner/work/profilarr-trash-guides/profilarr-trash-guides
+          python -m pytest tests/end_to_end/ -v --tb=short -m "not slow"
+
+  coverage:
+    runs-on: ubuntu-latest
+    needs: end-to-end-tests
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Install test dependencies
+        run: |
+          uv pip install pytest pytest-cov pytest-mock pyyaml markdownify
+
+      - name: Generate coverage report
+        run: |
+          cd /home/runner/work/profilarr-trash-guides/profilarr-trash-guides
+          python -m pytest tests/ --cov=scripts --cov-report=xml --cov-report=term -v --ignore=tests/end_to_end -m "not slow"
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          file: ./coverage.xml
+          flags: unittests
+          fail_ci_if_error: false
+          verbose: true
+        continue-on-error: true
+
+  all-tests-passed:
+    runs-on: ubuntu-latest
+    needs: [unit-tests, integration-tests, end-to-end-tests, coverage]
+    if: always()
+
+    steps:
+      - name: Check test results
+        run: |
+          if [ "${{ needs.unit-tests.result }}" != "success" ] || \
+             [ "${{ needs.integration-tests.result }}" != "success" ] || \
+             [ "${{ needs.end-to-end-tests.result }}" != "success" ]; then
+            echo "One or more test suites failed"
+            exit 1
+          fi
+          echo "All test suites passed successfully!"

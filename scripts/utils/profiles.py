@@ -1,7 +1,7 @@
-import os
 import json
-import yaml
+import os
 
+import yaml
 from markdownify import markdownify
 
 from utils.mappings.qualities import QUALITIES
@@ -117,6 +117,6 @@ def collect_profiles(
                 continue
 
             file_path = os.path.join(root, filename)
-            with open(file_path, "r", encoding="utf-8") as f:
+            with open(file_path, encoding="utf-8") as f:
                 data = json.load(f)
             collect_profile(service, data, output_dir, trash_id_to_scoring_mapping)

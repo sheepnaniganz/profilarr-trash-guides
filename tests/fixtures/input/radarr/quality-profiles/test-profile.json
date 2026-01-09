@@ -1,0 +1,26 @@
+{
+  "trash_id": "test-profile-1",
+  "name": "Test Quality Profile",
+  "description": "Test quality profile",
+  "upgradesAllowed": true,
+  "minCustomFormatScore": 0,
+  "upgradeUntilScore": 0,
+  "upgradeUntilQuality": null,
+  "formatItems": {
+    "test-id-1": "Test Regex Format",
+    "test-id-2": "Test Source Format"
+  },
+  "qualities": [
+    {
+      "name": "WEB-DL 720p",
+      "allowed": true
+    },
+    {
+      "name": "Remux-1080p",
+      "allowed": true
+    }
+  ],
+  "minFormatScore": 0,
+  "cutoffFormatScore": 0,
+  "language": "any"
+}

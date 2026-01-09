@@ -1,8 +1,10 @@
-import os
 import json
+import os
+
 import yaml
 
 from utils.mappings.misc_media_management import MISC_MEDIA_MANAGEMENT
+
 
 BASE_NAMING_CONFIG = {
     "radarr": {
@@ -38,13 +40,13 @@ def collect_misc_config(output_dir):
 
 
 def collect_naming_formats(input_dir, output_dir):
-    output_file = os.path.join(output_dir, f"naming.yml")
+    output_file = os.path.join(output_dir, "naming.yml")
     new_config = BASE_NAMING_CONFIG.copy()
 
     radarr_input_file_path = os.path.join(
         input_dir, "radarr", "naming", "radarr-naming.json"
     )
-    with open(radarr_input_file_path, "r", encoding="utf-8") as f:
+    with open(radarr_input_file_path, encoding="utf-8") as f:
         input_json = json.load(f)
         new_config["radarr"]["movieFormat"] = input_json["file"]["standard"]
         new_config["radarr"]["movieFolderFormat"] = input_json["folder"]["default"]
@@ -52,7 +54,7 @@ def collect_naming_formats(input_dir, output_dir):
     sonarr_input_file_path = os.path.join(
         input_dir, "sonarr", "naming", "sonarr-naming.json"
     )
-    with open(sonarr_input_file_path, "r", encoding="utf-8") as f:
+    with open(sonarr_input_file_path, encoding="utf-8") as f:
         input_json = json.load(f)
         standard_episode_format = input_json["episodes"]["standard"]["default"]
         daily_episode_format = input_json["episodes"]["daily"]["default"]
@@ -78,7 +80,7 @@ def collect_quality_definitions(input_dir, output_dir):
     radarr_input_file_path = os.path.join(
         input_dir, "radarr", "quality-size", "movie.json"
     )
-    with open(radarr_input_file_path, "r", encoding="utf-8") as f:
+    with open(radarr_input_file_path, encoding="utf-8") as f:
         radarr_data = json.load(f)
         for quality in reversed(radarr_data["qualities"]):
             profilarr_quality = {
@@ -93,7 +95,7 @@ def collect_quality_definitions(input_dir, output_dir):
     sonarr_input_file_path = os.path.join(
         input_dir, "sonarr", "quality-size", "series.json"
     )
-    with open(sonarr_input_file_path, "r", encoding="utf-8") as f:
+    with open(sonarr_input_file_path, encoding="utf-8") as f:
         sonarr_data = json.load(f)
         for quality in reversed(sonarr_data["qualities"]):
             profilarr_quality = {
