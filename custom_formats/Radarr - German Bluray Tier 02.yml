@@ -10,7 +10,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: Radarr - VECTOR
+  pattern: Radarr - VECTOR (1)
 - name: Radarr - MULTiPLEX
   negate: false
   required: false

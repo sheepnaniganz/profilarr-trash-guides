@@ -1,7 +1,0 @@
-name: SiC
-pattern: \bSiC\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -104,7 +104,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: SiC
+  pattern: SiC (1)
 - name: Radarr - TEPES
   negate: false
   required: false

@@ -19,7 +19,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: dB
+  pattern: dB (1)
 - name: Radarr - Flights
   negate: false
   required: false
@@ -54,7 +54,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: SbR
+  pattern: SbR (1)
 - name: Radarr - SMURF
   negate: false
   required: false

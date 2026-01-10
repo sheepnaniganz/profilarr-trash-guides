@@ -39,7 +39,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: NoNe
+  pattern: NoNe (1)
 - name: Radarr - ONLYMOViE
   negate: false
   required: false

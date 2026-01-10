@@ -186,25 +186,17 @@ dev = [
     { name = "pytest-cov" },
     { name = "pytest-mock" },
 ]
-test = [
-    { name = "pytest" },
-    { name = "pytest-cov" },
-    { name = "pytest-mock" },
-]
 
 [package.metadata]
 requires-dist = [
     { name = "markdownify" },
     { name = "pylint", marker = "extra == 'dev'", specifier = ">=3.0" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=7.0" },
-    { name = "pytest", marker = "extra == 'test'", specifier = ">=7.0" },
     { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=4.0" },
-    { name = "pytest-cov", marker = "extra == 'test'", specifier = ">=4.0" },
     { name = "pytest-mock", marker = "extra == 'dev'", specifier = ">=3.10" },
-    { name = "pytest-mock", marker = "extra == 'test'", specifier = ">=3.10" },
     { name = "pyyaml" },
 ]
-provides-extras = ["test", "dev"]
+provides-extras = ["dev"]
 
 [[package]]
 name = "pygments"

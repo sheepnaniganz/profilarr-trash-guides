@@ -14,7 +14,7 @@ conditions:
   negate: false
   required: true
   type: release_title
-  pattern: Dolby Vision
+  pattern: DV
 - name: Sonarr - No FANRES
   negate: true
   required: true
@@ -29,5 +29,5 @@ conditions:
   negate: true
   required: true
   type: release_title
-  pattern: Not Hybrid Release Group
+  pattern: Hybrid Release Group
 tests: []

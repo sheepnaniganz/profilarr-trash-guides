@@ -14,5 +14,5 @@ conditions:
   negate: true
   required: true
   type: release_group
-  pattern: Not OPUS Release Group
+  pattern: OPUS Release Group
 tests: []

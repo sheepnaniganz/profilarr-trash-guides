@@ -35,35 +35,44 @@ It will clear any potentially pre-existing output and generate new output based 
 
 ## Testing
 
-This project includes a comprehensive test suite with **120 tests** to ensure functionality remains stable. See [TESTING.md](TESTING.md) for complete testing documentation.
+This project includes automated tests to validate the integrity of generated output files.
 
-### Quick Test Run
+### Running Tests
+
+The test suite validates that:
+- Every pattern referenced in custom formats exists as a regex pattern file
+- Every custom format referenced in profiles exists as a custom format file
+
 ```bash
-# Using UV (recommended)
-uv sync --extra test
+# Install dev dependencies
+uv sync --extra dev
+
+# Run all tests
 uv run pytest tests/ -v
+
+# Run specific test files
+uv run pytest tests/test_custom_formats.py -v
+uv run pytest tests/test_profiles.py -v
 
 # Run with coverage report
 uv run pytest tests/ --cov=scripts --cov-report=term
-
-# Skip slow tests
-uv run pytest tests/ -v -m "not slow"
 ```
 
-### Test Coverage
-- **Unit tests** (93) - String utilities, mappings, regex extraction
-- **Integration tests** (13) - Pipeline flow and cross-references
-- **End-to-end tests** (14) - Full pipeline execution and regression testing
+### Test Validation
 
-For detailed testing guide, see [TESTING.md](TESTING.md).
+The tests ensure data integrity across the generated output:
+- **Custom Format Tests** - Validates all pattern references in `custom_formats/` exist in `regex_patterns/`
+- **Profile Tests** - Validates all custom format references in `profiles/` exist in `custom_formats/`
+
+If a test fails, it will clearly indicate which files contain broken references, making it easy to identify and fix issues.
 
 ## Code Quality
 
 This project uses **pylint** for static code analysis and quality checks.
 
 ```bash
-# Install linting tools
-uv sync --extra lint
+# Install dev tools
+uv sync --extra dev
 
 # Run linting
 uv run pylint scripts tests

@@ -43,7 +43,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: Radarr - Feranki1980
+  pattern: Feranki1980 (1)
 - name: Sonarr - FGT
   negate: false
   required: false

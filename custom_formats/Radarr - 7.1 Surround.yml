@@ -13,5 +13,5 @@ conditions:
   negate: true
   required: true
   type: release_title
-  pattern: Not Low Channel Count
+  pattern: Low Channel Count
 tests: []

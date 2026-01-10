@@ -1,7 +1,0 @@
-name: Not FLAC
-pattern: \bFLAC(\b|\d)
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

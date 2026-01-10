@@ -44,7 +44,7 @@ conditions:
   negate: false
   required: false
   type: release_title
-  pattern: Radarr - Dae
+  pattern: Dae (1)
 - name: Sonarr - Foxtrot
   negate: false
   required: false

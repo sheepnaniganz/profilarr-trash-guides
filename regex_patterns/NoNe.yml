@@ -1,7 +1,0 @@
-name: NoNe
-pattern: ^(NoNe)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

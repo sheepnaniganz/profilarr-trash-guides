@@ -9,7 +9,7 @@ conditions:
   negate: false
   required: false
   type: release_title
-  pattern: Max
+  pattern: Max (1)
 - name: Sonarr - MAX Rename
   negate: false
   required: false

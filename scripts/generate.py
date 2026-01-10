@@ -52,7 +52,7 @@ def main():
                 f"Custom format directory {trash_custom_formats_dir} does not exist, skipping."
             )
             continue
-        custom_regex_patterns = collect_regex_patterns(
+        regex_patterns = collect_regex_patterns(
             service,
             trash_custom_formats_dir,
             regex_patterns_dir,
@@ -73,7 +73,7 @@ def main():
             )
             continue
         trash_id_to_scoring_mapping = collect_custom_formats(
-            service, trash_custom_formats_dir, custom_formats_dir, custom_regex_patterns
+            service, trash_custom_formats_dir, custom_formats_dir, regex_patterns
         )
         collect_profiles(
             service,

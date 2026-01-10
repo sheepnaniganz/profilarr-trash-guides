@@ -9,12 +9,12 @@ conditions:
   negate: false
   required: true
   type: release_title
-  pattern: x|h265
+  pattern: x265-HEVC
 - name: Sonarr - Not HDR-DV
   negate: true
   required: true
   type: release_title
-  pattern: Not HDR-DV
+  pattern: HDR-DV
 - name: Sonarr - Not 2160p
   negate: true
   required: true

@@ -3,6 +3,8 @@ name: Generate
 on:
   schedule:
     - cron: "31 7 * * *"
+  pull_request:
+    types: [opened, synchronize]
   workflow_dispatch:
 
 jobs:
@@ -27,9 +29,16 @@ jobs:
           git config --global user.name "Github Actions"
           git clone https://github.com/TRaSH-Guides/Guides.git TRaSH-Guides
 
+      - name: Install dependencies`
+        run: uv sync --extra dev
+
       - name: Run Python script
         run: |
           uv run scripts/generate.py TRaSH-Guides/docs/json .
+
+      - name: Run tests
+        run: |
+          uv run pytest tests
 
       - name: Check for changes
         run: |

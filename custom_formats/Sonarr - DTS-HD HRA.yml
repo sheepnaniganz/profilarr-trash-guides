@@ -13,37 +13,37 @@ conditions:
   negate: true
   required: true
   type: release_title
-  pattern: Not TrueHD-ATMOS
+  pattern: TrueHD-ATMOS
 - name: Sonarr - Not Dolby Digital Plus
   negate: true
   required: true
   type: release_title
-  pattern: Not Dolby Digital Plus
+  pattern: Dolby Digital Plus
 - name: Sonarr - Not Basic DTS
   negate: true
   required: true
   type: release_title
-  pattern: Not Basic DTS
-- name: 'Sonarr - Not Basic Dolby Digital '
+  pattern: Basic DTS
+- name: Sonarr - Not Basic Dolby Digital
   negate: true
   required: true
   type: release_title
-  pattern: Not Basic Dolby Digital
+  pattern: Basic Dolby Digital
 - name: Sonarr - Not DTS X
   negate: true
   required: true
   type: release_title
-  pattern: Not DTS X
+  pattern: DTS X
 - name: Sonarr - Not FLAC
   negate: true
   required: true
   type: release_title
-  pattern: Not FLAC
+  pattern: FLAC
 - name: Sonarr - Not AAC
   negate: true
   required: true
   type: release_title
-  pattern: Not AAC
+  pattern: AAC
 - name: Sonarr - Not PCM
   negate: true
   required: true
@@ -53,10 +53,10 @@ conditions:
   negate: true
   required: true
   type: release_title
-  pattern: Radarr - DTS-ES
+  pattern: DTS-ES (1)
 - name: Sonarr - Not 6.1 Surround
   negate: true
   required: true
   type: release_title
-  pattern: Radarr - 6.1 Surround
+  pattern: 6.1 Surround (1)
 tests: []

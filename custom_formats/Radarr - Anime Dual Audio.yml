@@ -14,7 +14,7 @@ conditions:
   negate: true
   required: true
   type: release_title
-  pattern: Not Single Language Only
+  pattern: Single Language Only
 - name: Radarr - Japanese Language
   negate: false
   required: false

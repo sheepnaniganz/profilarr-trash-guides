@@ -18,7 +18,7 @@ conditions:
   negate: false
   required: false
   type: release_title
-  pattern: KaiDubs (Not Dual Audio)
+  pattern: KaiDubs (Dual Audio)
 - name: Sonarr - KamiFS
   negate: false
   required: false
@@ -28,7 +28,7 @@ conditions:
   negate: false
   required: false
   type: release_title
-  pattern: KS (Not Dual Audio)
+  pattern: KS (Dual Audio)
 - name: Sonarr - torenter69
   negate: false
   required: false

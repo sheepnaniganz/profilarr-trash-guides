@@ -1,0 +1,7 @@
+name: Hybrid Release Group
+pattern: -HYBRID
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

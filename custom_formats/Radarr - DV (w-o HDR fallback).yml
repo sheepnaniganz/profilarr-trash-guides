@@ -25,12 +25,12 @@ conditions:
   negate: true
   required: true
   type: release_group
-  pattern: Not RlsGrp
+  pattern: RlsGrp
 - name: Radarr - Not HDR
   negate: true
   required: true
   type: release_title
-  pattern: Not HDR
+  pattern: HDR
 - name: Radarr - Not Hulu
   negate: true
   required: true

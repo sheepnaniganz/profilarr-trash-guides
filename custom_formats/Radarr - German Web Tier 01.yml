@@ -49,7 +49,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: QfG
+  pattern: QfG (1)
 - name: Radarr - CNY
   negate: false
   required: false
@@ -84,7 +84,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: pmHD
+  pattern: pmHD (1)
 - name: Radarr - WebDL
   negate: false
   required: false

@@ -9,7 +9,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: Radarr - TvR
+  pattern: Radarr - TvR (1)
 - name: Radarr - pmHD
   negate: false
   required: false
@@ -19,7 +19,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: Radarr - NIMA4K
+  pattern: Radarr - NIMA4K (1)
 - name: Radarr - QfG
   negate: false
   required: false

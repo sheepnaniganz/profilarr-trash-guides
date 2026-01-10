@@ -13,7 +13,7 @@ conditions:
   negate: false
   required: false
   type: release_title
-  pattern: Radarr - HDR
+  pattern: HDR (1)
 - name: Sonarr - HDR10
   negate: false
   required: false
@@ -23,7 +23,7 @@ conditions:
   negate: false
   required: false
   type: release_title
-  pattern: HDR10+
+  pattern: HDR10+ (1)
 - name: Sonarr - HLG
   negate: false
   required: false

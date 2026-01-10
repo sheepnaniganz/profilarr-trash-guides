@@ -1,7 +1,0 @@
-name: Not DTS-HD
-pattern: \b(dts[-_. ]?(ma|hd([-_. ]?ma)?|xll))(\b|\d)
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

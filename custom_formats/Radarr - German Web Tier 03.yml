@@ -9,7 +9,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: Radarr - RobertDeNiro
+  pattern: Radarr - RobertDeNiro (1)
 - name: Radarr - BALENCiAGA
   negate: false
   required: false

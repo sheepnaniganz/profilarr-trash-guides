@@ -8,5 +8,5 @@ conditions:
   negate: false
   required: true
   type: release_group
-  pattern: Radarr - FraMeSToR
+  pattern: FraMeSToR (1)
 tests: []

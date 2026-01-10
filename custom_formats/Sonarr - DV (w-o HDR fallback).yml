@@ -10,7 +10,7 @@ conditions:
   negate: false
   required: true
   type: release_title
-  pattern: Dolby Vision
+  pattern: DV
 - name: Sonarr - WEBDL
   negate: false
   required: false
@@ -25,12 +25,12 @@ conditions:
   negate: true
   required: true
   type: release_group
-  pattern: Not RlsGrp
+  pattern: RlsGrp
 - name: Sonarr - Not HDR
   negate: true
   required: true
   type: release_title
-  pattern: Not HDR
+  pattern: HDR
 - name: Sonarr - Not Hulu
   negate: true
   required: true

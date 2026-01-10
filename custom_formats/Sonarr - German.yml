@@ -29,5 +29,5 @@ conditions:
   negate: true
   required: true
   type: release_title
-  pattern: Not Subbed
+  pattern: Subbed
 tests: []

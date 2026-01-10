@@ -19,5 +19,5 @@ conditions:
   negate: true
   required: true
   type: release_title
-  pattern: Not German in Title
+  pattern: German in Title
 tests: []

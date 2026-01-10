@@ -8,5 +8,5 @@ conditions:
   negate: false
   required: true
   type: release_title
-  pattern: Multi
+  pattern: Multi (1)
 tests: []

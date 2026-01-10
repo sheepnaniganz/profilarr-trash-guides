@@ -39,7 +39,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: NoNe
+  pattern: NoNe (1)
 - name: Sonarr - pERsO
   negate: false
   required: false

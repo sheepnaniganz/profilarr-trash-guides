@@ -39,7 +39,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: Radarr - FraMeSToR
+  pattern: FraMeSToR (1)
 - name: Radarr - PiRAMiDHEAD
   negate: false
   required: false

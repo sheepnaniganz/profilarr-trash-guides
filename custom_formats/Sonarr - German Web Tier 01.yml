@@ -44,7 +44,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: QfG
+  pattern: QfG (1)
 - name: Sonarr - CNY
   negate: false
   required: false

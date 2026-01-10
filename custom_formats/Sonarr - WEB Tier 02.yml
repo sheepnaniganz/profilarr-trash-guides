@@ -29,7 +29,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: Radarr - Chotab
+  pattern: Chotab (1)
 - name: Sonarr - Cinefeel
   negate: false
   required: false
@@ -54,7 +54,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: dB
+  pattern: dB (1)
 - name: Sonarr - DEEP
   negate: false
   required: false
@@ -179,7 +179,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: SbR
+  pattern: SbR (1)
 - name: Sonarr - SDCC
   negate: false
   required: false

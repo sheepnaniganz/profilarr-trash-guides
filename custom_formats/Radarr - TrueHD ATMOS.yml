@@ -8,35 +8,35 @@ conditions:
   negate: false
   required: true
   type: release_title
-  pattern: Radarr - TrueHD
+  pattern: Radarr - TrueHD (1)
 - name: Radarr - ATMOS
   negate: false
   required: true
   type: release_title
-  pattern: Radarr - ATMOS
+  pattern: Radarr - ATMOS (2)
 - name: Radarr - Not Basic Dolby Digital
   negate: true
   required: true
   type: release_title
-  pattern: Not Basic Dolby Digital
-- name: 'Radarr - Not Dolby Digital Plus '
+  pattern: Basic Dolby Digital
+- name: Radarr - Not Dolby Digital Plus
   negate: true
   required: true
   type: release_title
-  pattern: Not Dolby Digital Plus
+  pattern: Dolby Digital Plus
 - name: Radarr - Not DTS
   negate: true
   required: true
   type: release_title
-  pattern: Not DTS
+  pattern: DTS
 - name: Radarr - Not DTS X
   negate: true
   required: true
   type: release_title
-  pattern: Not DTS X
+  pattern: DTS X
 - name: Radarr - Not FLAC
   negate: true
   required: true
   type: release_title
-  pattern: Not FLAC
+  pattern: FLAC
 tests: []

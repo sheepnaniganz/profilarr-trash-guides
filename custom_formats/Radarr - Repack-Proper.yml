@@ -13,5 +13,5 @@ conditions:
   negate: true
   required: true
   type: release_title
-  pattern: Not Higher Version Repack-Proper
+  pattern: Higher Version Repack-Proper
 tests: []

@@ -41,7 +41,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: Radarr - Chotab
+  pattern: Chotab (1)
 - name: Radarr - CRiSC
   negate: false
   required: false
@@ -56,7 +56,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: Radarr - D-Z0N3
+  pattern: Radarr - D-Z0N3 (1)
 - name: Radarr - Dariush
   negate: false
   required: false

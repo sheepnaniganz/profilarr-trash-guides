@@ -1,7 +1,0 @@
-name: Not RlsGrp
-pattern: \b(Flights)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

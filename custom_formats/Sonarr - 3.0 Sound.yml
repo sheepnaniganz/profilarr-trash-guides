@@ -8,17 +8,17 @@ conditions:
   negate: false
   required: true
   type: release_title
-  pattern: Not 3.0ch
+  pattern: 3.0ch
 - name: Sonarr - Not Mono
   negate: true
   required: true
   type: release_title
-  pattern: Not Mono
+  pattern: Mono
 - name: Sonarr - Not Stereo
   negate: true
   required: true
   type: release_title
-  pattern: Not Stereo
+  pattern: Stereo
 - name: Sonarr - Not 4.0ch
   negate: true
   required: true
@@ -28,5 +28,5 @@ conditions:
   negate: true
   required: true
   type: release_title
-  pattern: Not High Channel Count
+  pattern: High Channel Count
 tests: []

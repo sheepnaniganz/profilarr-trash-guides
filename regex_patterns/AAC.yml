@@ -1,0 +1,7 @@
+name: AAC
+pattern: \bAAC(\b|\d)
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

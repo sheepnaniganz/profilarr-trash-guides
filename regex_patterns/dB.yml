@@ -1,5 +1,5 @@
-name: dB
-pattern: ^(dB)$
+name: DB
+pattern: \[DB\]
 description: ''
 tags:
 - Radarr

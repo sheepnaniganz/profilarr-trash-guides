@@ -8,5 +8,5 @@ conditions:
   negate: false
   required: false
   type: release_title
-  pattern: HDR10+
+  pattern: HDR10+ (1)
 tests: []

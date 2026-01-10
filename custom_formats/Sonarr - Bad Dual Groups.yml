@@ -138,7 +138,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: Radarr - ZigZag
+  pattern: ZigZag (1)
 - name: Sonarr - ZNM
   negate: false
   required: false

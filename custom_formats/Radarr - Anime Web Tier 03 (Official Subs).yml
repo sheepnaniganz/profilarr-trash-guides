@@ -29,5 +29,5 @@ conditions:
   negate: false
   required: false
   type: release_title
-  pattern: Radarr - ZR
+  pattern: ZR (1)
 tests: []

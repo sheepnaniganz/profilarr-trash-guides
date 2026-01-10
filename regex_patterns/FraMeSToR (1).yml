@@ -1,0 +1,7 @@
+name: FraMeSToR (1)
+pattern: ^(FraMeSToR)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

@@ -1,0 +1,7 @@
+name: SiC (1)
+pattern: ^(SiC)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

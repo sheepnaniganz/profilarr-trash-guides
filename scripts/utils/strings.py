@@ -1,17 +1,17 @@
-def get_safe_name(name):
+def _get_safe_name(name, remove_not=False):
+    result = name
+    if remove_not:
+        result = result.replace("Not ", "")
     return (
-        name.replace("/", "-")
+        result.replace("/", "-")
         .replace("[", "(")
         .replace("]", ")")
         .replace("HDR10Plus", "HDR10+")
         .replace("10 bit", "10bit")
         .replace("Atmos", "ATMOS")
+        .strip()
     )
 
 
-def get_name(service, name):
-    return f"{service.capitalize()} - {get_safe_name(name)}"
-
-
-def get_regex_pattern_name(service, regex_pattern_name):
-    return get_name(service, regex_pattern_name).replace("Not ", "")
+def get_name(service, name, remove_not=False):
+    return f"{service.capitalize()} - {_get_safe_name(name, remove_not)}"

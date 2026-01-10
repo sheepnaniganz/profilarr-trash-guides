@@ -8,5 +8,5 @@ conditions:
   negate: false
   required: true
   type: release_title
-  pattern: Radarr - Higher Version Repack-Proper
+  pattern: Higher Version Repack-Proper (1)
 tests: []

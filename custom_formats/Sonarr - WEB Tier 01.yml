@@ -94,7 +94,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: SiC
+  pattern: SiC (1)
 - name: Sonarr - T6D
   negate: false
   required: false

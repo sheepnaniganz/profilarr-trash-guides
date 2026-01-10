@@ -9,7 +9,7 @@ conditions:
   negate: false
   required: true
   type: release_title
-  pattern: x|h265
+  pattern: x265-HEVC
 - name: Radarr - Not 2160p
   negate: true
   required: true

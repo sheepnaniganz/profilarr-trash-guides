@@ -30,7 +30,7 @@ BASE_NAMING_CONFIG = {
 BASE_QUALITY_DEFINITIONS = {"qualityDefinitions": {"radarr": {}, "sonarr": {}}}
 
 
-def collect_misc_config(output_dir):
+def _collect_misc_config(output_dir):
     output_file = os.path.join(output_dir, "misc.yml")
 
     with open(output_file, "w", encoding="utf-8") as f:
@@ -39,7 +39,7 @@ def collect_misc_config(output_dir):
     print(f"Generated: {output_file}")
 
 
-def collect_naming_formats(input_dir, output_dir):
+def _collect_naming_formats(input_dir, output_dir):
     output_file = os.path.join(output_dir, "naming.yml")
     new_config = BASE_NAMING_CONFIG.copy()
 
@@ -73,7 +73,7 @@ def collect_naming_formats(input_dir, output_dir):
     print(f"Generated: {output_file}")
 
 
-def collect_quality_definitions(input_dir, output_dir):
+def _collect_quality_definitions(input_dir, output_dir):
     output_structure = BASE_QUALITY_DEFINITIONS.copy()
     output_file = os.path.join(output_dir, "quality_definitions.yml")
 
@@ -114,6 +114,6 @@ def collect_quality_definitions(input_dir, output_dir):
 
 
 def collect_media_management(input_dir, output_dir):
-    collect_misc_config(output_dir)
-    collect_naming_formats(input_dir, output_dir)
-    collect_quality_definitions(input_dir, output_dir)
+    _collect_misc_config(output_dir)
+    _collect_naming_formats(input_dir, output_dir)
+    _collect_quality_definitions(input_dir, output_dir)

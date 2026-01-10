@@ -13,5 +13,5 @@ conditions:
   negate: true
   required: true
   type: release_title
-  pattern: Not 4K Remaster
+  pattern: 4K Remaster
 tests: []

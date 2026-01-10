@@ -25,10 +25,10 @@ conditions:
   negate: false
   required: true
   type: release_title
-  pattern: Not HDR
+  pattern: HDR
 - name: Radarr - DV
   negate: false
   required: true
   type: release_title
-  pattern: Dolby Vision
+  pattern: DV
 tests: []

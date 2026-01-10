@@ -1,0 +1,7 @@
+name: Single Language Only
+pattern: \[(JA|ZH|KO)\]
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []
