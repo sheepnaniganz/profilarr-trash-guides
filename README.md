@@ -76,10 +76,4 @@ uv sync --extra dev
 
 # Run linting
 uv run pylint scripts tests
-
-# Setup pre-commit hooks
-pre-commit install
-pre-commit run --all-files
 ```
-
-For detailed linting guide, see [FORMATTING.md](FORMATTING.md).
