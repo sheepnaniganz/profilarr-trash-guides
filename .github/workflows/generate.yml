@@ -10,15 +10,10 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout this repository
         uses: actions/checkout@v6
-        with:
-          ref: ${{ github.head_ref || github.ref_name }}
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -45,12 +40,22 @@ jobs:
         run: |
           uv run pytest tests
 
-      - name: Check for changes
+      - name: Check for uncommitted changes (PR)
+        if: github.event_name == 'pull_request'
         run: |
           git add regex_patterns/ custom_formats/ profiles/
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Automated update from GitHub Actions"
-            git push origin HEAD:${{ github.head_ref || github.ref_name }}
+          if ! git diff --staged --quiet; then
+            echo "❌ Error: Generated files have changes that are not committed."
+            echo "Please run the generation script locally and commit the changes:"
+            echo "  uv run scripts/generate.py TRaSH-Guides/docs/json ."
+            git diff --staged --stat
+            exit 1
           fi
+          echo "✅ No uncommitted changes detected"
+
+      - name: Commit and push changes (Scheduled/Manual)
+        if: github.event_name != 'pull_request'
+        run: |
+          git add regex_patterns/ custom_formats/ profiles/
+          git commit -m "Automated update from GitHub Actions" || echo "No changes to commit"
+          git push
