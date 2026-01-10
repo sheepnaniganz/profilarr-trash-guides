@@ -68,7 +68,7 @@ def _update_existing_pattern_for_service(existing_data, service, output_dir):
     print(f"Updated pattern for multiple services: {new_path}")
 
 
-def _generate_unique_pattern_name(initial_name, pattern):
+def _generate_unique_pattern_name(initial_name, pattern, output_dir):
     """Generate a unique pattern name if there are collisions."""
     final_name = initial_name
     counter = 1
@@ -83,7 +83,26 @@ def _generate_unique_pattern_name(initial_name, pattern):
         final_name = f"{initial_name} ({counter})"
         normalized_key = final_name.lower()
         counter += 1
+
+    # Also check for case-insensitive file system collisions
+    while _case_insensitive_file_exists(output_dir, f"{final_name}.yml"):
+        final_name = f"{initial_name} ({counter})"
+        normalized_key = final_name.lower()
+        counter += 1
+
     return final_name
+
+
+def _case_insensitive_file_exists(directory, filename):
+    """Check if a file exists with case-insensitive matching."""
+    if not os.path.exists(directory):
+        return False
+
+    filename_lower = filename.lower()
+    for existing_file in os.listdir(directory):
+        if existing_file.lower() == filename_lower:
+            return True
+    return False
 
 
 def _create_new_pattern_file(service, pattern, final_name, output_dir):
@@ -97,10 +116,6 @@ def _create_new_pattern_file(service, pattern, final_name, output_dir):
     }
 
     output_path = os.path.join(output_dir, f"{final_name}.yml")
-
-    # Check if file exists (case-insensitive on some file systems)
-    if os.path.exists(output_path):
-        raise FileExistsError(f"File already exists (possible case collision): {output_path}")
 
     with open(output_path, "w", encoding="utf-8") as f:
         yaml.dump(yml_data, f, sort_keys=False, allow_unicode=True)
@@ -154,7 +169,7 @@ def _collect_regex_pattern(service, file_name, input_json, output_dir):
 
         # Pattern not seen before - check for name collisions
         initial_name = get_name(service, spec_name, remove_not=True)
-        final_name = _generate_unique_pattern_name(initial_name, pattern)
+        final_name = _generate_unique_pattern_name(initial_name, pattern, output_dir)
 
         if final_name:
             _create_new_pattern_file(service, pattern, final_name, output_dir)
