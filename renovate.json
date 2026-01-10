@@ -4,10 +4,14 @@
     "config:best-practices",
     "schedule:weekly"
   ],
-  "python": {
-    "range": ">=3.13"
-  },
   "packageRules": [
+    {
+      "description": "Set Python version constraint",
+      "matchDatasources": ["pypi"],
+      "constraints": {
+        "python": ">=3.13"
+      }
+    },
     {
       "description": "Auto-merge patch and minor updates for dependencies",
       "matchUpdateTypes": ["patch", "minor"],
@@ -30,7 +34,7 @@
     "before 3am on Monday"
   ],
   "timezone": "UTC",
-  "semanticCommits": true,
+  "semanticCommits": "enabled",
   "prConcurrentLimit": 5,
   "vulnerabilityAlerts": {
     "labels": ["security"],
