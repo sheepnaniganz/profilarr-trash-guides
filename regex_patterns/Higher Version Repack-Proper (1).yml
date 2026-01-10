@@ -1,7 +1,0 @@
-name: Higher Version Repack-Proper (1)
-pattern: \b((repack|proper)3)\b|\b(REAL\.REAL\.(PROPER|REPACK))\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

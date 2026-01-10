@@ -4,14 +4,14 @@ tags:
 - Sonarr
 - Release Title
 conditions:
-- name: Sonarr - Repack-Proper 2 or Real Proper-Repack
+- name: Sonarr - Repack-Proper 2 or REAL.PROPER-REPACK
   negate: false
   required: true
   type: release_title
-  pattern: Repack-Proper 2 or Real Proper-Repack
-- name: Sonarr - Not Higher Version Repack-Proper
+  pattern: Repack-Proper 2 or REAL.PROPER-REPACK
+- name: Sonarr - Not Repack-Proper 3
   negate: true
   required: true
   type: release_title
-  pattern: Higher Version Repack-Proper (1)
+  pattern: Repack-Proper 3
 tests: []
