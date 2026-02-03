@@ -49,7 +49,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: playWEB
+  pattern: playWEB (1)
 - name: Radarr - SbR
   negate: false
   required: false

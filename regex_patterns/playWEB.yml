@@ -1,7 +1,0 @@
-name: playWEB
-pattern: ^(playWEB)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

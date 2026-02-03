@@ -1,7 +1,0 @@
-name: Sushi
-pattern: \[Sushi\]|-Sushi\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

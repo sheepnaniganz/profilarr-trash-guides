@@ -1,7 +1,0 @@
-name: UWU
-pattern: \b(UWU)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

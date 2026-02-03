@@ -1,7 +1,0 @@
-name: Impatience
-pattern: \[Impatience\]|-Impatience\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

@@ -29,7 +29,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: Chotab (1)
+  pattern: Chotab
 - name: Sonarr - Cinefeel
   negate: false
   required: false
@@ -154,7 +154,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: playWEB
+  pattern: playWEB (1)
 - name: Sonarr - PSiG
   negate: false
   required: false

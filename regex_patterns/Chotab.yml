@@ -1,5 +1,5 @@
 name: Chotab
-pattern: \b(Chotab)\b
+pattern: ^(Chotab)$
 description: ''
 tags:
 - Radarr

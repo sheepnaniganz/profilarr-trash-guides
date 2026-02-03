@@ -1,5 +1,5 @@
 name: Kitsune
-pattern: ^(Kitsune)$
+pattern: \[Kitsune\]|-Kitsune\b
 description: ''
 tags:
 - Radarr

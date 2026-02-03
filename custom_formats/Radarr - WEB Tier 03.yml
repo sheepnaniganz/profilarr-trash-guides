@@ -19,7 +19,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: Dooky
+  pattern: Dooky (1)
 - name: Radarr - GNOMiSSiON
   negate: false
   required: false

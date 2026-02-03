@@ -79,7 +79,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: Kitsune
+  pattern: Kitsune (1)
 - name: Radarr - NOSiViD
   negate: false
   required: false

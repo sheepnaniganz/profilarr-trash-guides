@@ -1,7 +1,0 @@
-name: HAiKU
-pattern: \b(HAiKU)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

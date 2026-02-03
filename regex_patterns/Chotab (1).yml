@@ -1,7 +1,0 @@
-name: Chotab (1)
-pattern: ^(Chotab)$
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

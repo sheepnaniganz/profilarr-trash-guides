@@ -1,0 +1,7 @@
+name: Dooky (1)
+pattern: ^(Dooky)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

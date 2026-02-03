@@ -1,7 +1,0 @@
-name: Licca
-pattern: \b(Licca)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

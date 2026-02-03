@@ -1,7 +1,0 @@
-name: Ayashii
-pattern: \[Ayashii\]|-Ayashii\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

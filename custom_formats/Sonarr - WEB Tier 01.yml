@@ -54,7 +54,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: Kitsune
+  pattern: Kitsune (1)
 - name: Sonarr - monkee
   negate: false
   required: false

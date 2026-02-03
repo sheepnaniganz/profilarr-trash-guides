@@ -1,7 +1,0 @@
-name: Watashi
-pattern: \[Watashi\]|-Watashi\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

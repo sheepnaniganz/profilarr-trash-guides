@@ -1,7 +1,0 @@
-name: Alt
-pattern: \[Alt\]|-Alt\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

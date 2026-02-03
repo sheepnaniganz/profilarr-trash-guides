@@ -1,7 +1,0 @@
-name: Raizel
-pattern: \b(Raizel)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

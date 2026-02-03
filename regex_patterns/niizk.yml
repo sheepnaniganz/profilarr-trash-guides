@@ -1,7 +1,0 @@
-name: niizk
-pattern: \b(niizk)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

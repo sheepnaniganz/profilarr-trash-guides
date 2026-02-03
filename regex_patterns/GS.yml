@@ -1,7 +1,0 @@
-name: GS
-pattern: \b(GS)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

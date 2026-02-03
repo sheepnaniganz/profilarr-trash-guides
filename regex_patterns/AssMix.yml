@@ -1,7 +1,0 @@
-name: AssMix
-pattern: \b(AssMix)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

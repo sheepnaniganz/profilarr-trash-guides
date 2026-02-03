@@ -1,7 +1,0 @@
-name: xPearse
-pattern: \b(xPearse)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

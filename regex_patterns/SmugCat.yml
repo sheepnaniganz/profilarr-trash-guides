@@ -1,7 +1,0 @@
-name: SmugCat
-pattern: \b(SmugCat)\b
-description: ''
-tags:
-- Radarr
-- Sonarr
-tests: []

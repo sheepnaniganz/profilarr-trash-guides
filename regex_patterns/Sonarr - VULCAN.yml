@@ -1,6 +1,0 @@
-name: Sonarr - VULCAN
-pattern: \b(VULCAN)\b
-description: ''
-tags:
-- Sonarr
-tests: []
