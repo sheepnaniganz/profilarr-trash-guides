@@ -1,6 +1,7 @@
 import os
 
 import yaml
+from pathvalidate import sanitize_filename
 
 from utils.file_utils import iterate_json_files
 from utils.strings import get_name
@@ -30,7 +31,7 @@ def _update_existing_pattern_for_service(existing_data, service, output_dir):
             break
 
     # Use the existing (original) name with preserved casing
-    safe_name = existing_name
+    safe_name = sanitize_filename(existing_name)
     new_path = os.path.join(output_dir, f"{safe_name}.yml")
 
     # Rename file if needed (from service-specific to generic name)
@@ -53,7 +54,7 @@ def _update_existing_pattern_for_service(existing_data, service, output_dir):
             yml_data["tags"] = []
         if service.capitalize() not in yml_data["tags"]:
             yml_data["tags"].append(service.capitalize())
-        yml_data["name"] = safe_name
+        yml_data["name"] = sanitize_filename(safe_name)
         f.seek(0)
         yaml.dump(yml_data, f, sort_keys=False, allow_unicode=True)
         f.truncate()
@@ -63,7 +64,7 @@ def _update_existing_pattern_for_service(existing_data, service, output_dir):
         existing_data["services"].append(service.capitalize())
 
     # Update name in tracking data
-    existing_data["name"] = safe_name
+    existing_data["name"] = sanitize_filename(safe_name)
 
     print(f"Updated pattern for multiple services: {new_path}")
 
@@ -73,7 +74,7 @@ def _generate_unique_pattern_name(initial_name, pattern, output_dir):
     final_name = initial_name
     counter = 1
     # Use lowercase for case-insensitive comparison
-    normalized_key = final_name.lower()
+    normalized_key = sanitize_filename(final_name.lower())
 
     while normalized_key in regex_patterns["by_name"]:
         existing_pattern_data = regex_patterns["by_name"][normalized_key]
@@ -81,16 +82,16 @@ def _generate_unique_pattern_name(initial_name, pattern, output_dir):
             print(f"Pattern with same name and pattern already exists: {final_name}")
             return None
         final_name = f"{initial_name} ({counter})"
-        normalized_key = final_name.lower()
+        normalized_key = sanitize_filename(final_name.lower())
         counter += 1
 
     # Also check for case-insensitive file system collisions
     while _case_insensitive_file_exists(output_dir, f"{final_name}.yml"):
         final_name = f"{initial_name} ({counter})"
-        normalized_key = final_name.lower()
+        normalized_key = sanitize_filename(final_name.lower())
         counter += 1
 
-    return final_name
+    return sanitize_filename(final_name)
 
 
 def _case_insensitive_file_exists(directory, filename):
@@ -98,7 +99,7 @@ def _case_insensitive_file_exists(directory, filename):
     if not os.path.exists(directory):
         return False
 
-    filename_lower = filename.lower()
+    filename_lower = sanitize_filename(filename.lower())
     for existing_file in os.listdir(directory):
         if existing_file.lower() == filename_lower:
             return True
@@ -108,13 +109,13 @@ def _case_insensitive_file_exists(directory, filename):
 def _create_new_pattern_file(service, pattern, final_name, output_dir):
     """Create a new pattern file."""
     yml_data = {
-        "name": final_name,
+        "name": sanitize_filename(final_name),
         "pattern": pattern,
         "description": "",
         "tags": [service.capitalize()],
         "tests": [],
     }
-
+    final_name = sanitize_filename(final_name)
     output_path = os.path.join(output_dir, f"{final_name}.yml")
 
     with open(output_path, "w", encoding="utf-8") as f:
@@ -123,12 +124,12 @@ def _create_new_pattern_file(service, pattern, final_name, output_dir):
     # Store in dict (twice - by name and by pattern)
     # Use lowercase keys for case-insensitive lookups
     pattern_data = {
-        "name": final_name,
+        "name": sanitize_filename(final_name),
         "pattern": pattern,
         "services": [service.capitalize()],
         "file_path": output_path,
     }
-    regex_patterns["by_name"][final_name.lower()] = pattern_data
+    regex_patterns["by_name"][sanitize_filename(final_name.lower())] = pattern_data
     regex_patterns["by_pattern"][pattern] = pattern_data
 
     print(f"Generated: {output_path}")
@@ -172,7 +173,7 @@ def _collect_regex_pattern(service, file_name, input_json, output_dir):
         final_name = _generate_unique_pattern_name(initial_name, pattern, output_dir)
 
         if final_name:
-            _create_new_pattern_file(service, pattern, final_name, output_dir)
+            _create_new_pattern_file(service, pattern, sanitize_filename(final_name), output_dir)
 
 
 def collect_regex_patterns(service, input_dir, output_dir):
