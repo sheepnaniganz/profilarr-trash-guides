@@ -9,7 +9,7 @@ conditions:
   negate: false
   required: true
   type: release_title
-  pattern: x|h266
+  pattern: xh266
 - name: Sonarr - Not Remux
   negate: true
   required: true

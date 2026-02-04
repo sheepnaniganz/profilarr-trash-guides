@@ -9,7 +9,7 @@ conditions:
   negate: false
   required: true
   type: release_title
-  pattern: x|h264
+  pattern: xh264
 - name: Radarr - Remux
   negate: true
   required: true
