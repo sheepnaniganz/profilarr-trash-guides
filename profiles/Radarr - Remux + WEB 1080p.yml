@@ -43,16 +43,16 @@ custom_formats:
 - name: Radarr - Sing-Along Versions
   score: -10000
 qualities:
-- id: 8
-  name: Remux-1080p
 - id: -1
   name: WEB 1080p
   description: ''
   qualities:
-  - id: 9
-    name: WEBDL-1080p
   - id: 11
     name: WEBRip-1080p
+  - id: 9
+    name: WEBDL-1080p
+- id: 8
+  name: Remux-1080p
 upgrade_until:
   id: 8
   name: Remux-1080p

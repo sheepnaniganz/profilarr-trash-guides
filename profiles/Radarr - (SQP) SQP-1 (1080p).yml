@@ -77,22 +77,22 @@ custom_formats:
 - name: Radarr - x265 (HD)
   score: -10000
 qualities:
+- id: 13
+  name: Bluray-720p
 - id: -1
   name: Bluray|WEB-1080p
   description: ''
   qualities:
-  - id: 14
-    name: WEBDL-720p
-  - id: 15
-    name: WEBRip-720p
-  - id: 9
-    name: WEBDL-1080p
-  - id: 11
-    name: WEBRip-1080p
   - id: 10
     name: Bluray-1080p
-- id: 13
-  name: Bluray-720p
+  - id: 11
+    name: WEBRip-1080p
+  - id: 9
+    name: WEBDL-1080p
+  - id: 15
+    name: WEBRip-720p
+  - id: 14
+    name: WEBDL-720p
 upgrade_until:
   id: -1
   name: Bluray|WEB-1080p

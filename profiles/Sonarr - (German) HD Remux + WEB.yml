@@ -69,12 +69,12 @@ qualities:
   name: Merged QPs
   description: ''
   qualities:
-  - id: 9
-    name: WEBDL-1080p
-  - id: 11
-    name: WEBRip-1080p
   - id: null
     name: Bluray-1080p Remux
+  - id: 11
+    name: WEBRip-1080p
+  - id: 9
+    name: WEBDL-1080p
 upgrade_until:
   id: -1
   name: Merged QPs

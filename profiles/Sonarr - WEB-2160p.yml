@@ -41,10 +41,10 @@ qualities:
   name: WEB 2160p
   description: ''
   qualities:
-  - id: 5
-    name: WEBDL-2160p
   - id: 6
     name: WEBRip-2160p
+  - id: 5
+    name: WEBDL-2160p
 upgrade_until:
   id: -1
   name: WEB 2160p

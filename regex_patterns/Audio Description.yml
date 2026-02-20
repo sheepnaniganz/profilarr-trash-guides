@@ -1,0 +1,7 @@
+name: Audio Description
+pattern: \b((FRENCH|MULTi|WiTH)[ .-]AD)\b
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

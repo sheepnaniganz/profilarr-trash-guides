@@ -78,51 +78,51 @@ custom_formats:
 - name: Sonarr - VOSTFR
   score: -10000
 qualities:
+- id: 24
+  name: SDTV
+- id: 22
+  name: DVD
 - id: -4
-  name: Bluray 1080p
-  description: ''
-  qualities:
-  - id: 10
-    name: Bluray-1080p
-  - id: null
-    name: Bluray-1080p Remux
-- id: -3
-  name: WEB 1080p
-  description: ''
-  qualities:
-  - id: 9
-    name: WEBDL-1080p
-  - id: 11
-    name: WEBRip-1080p
-  - id: 12
-    name: HDTV-1080p
-- id: 13
-  name: Bluray-720p
-- id: -2
-  name: WEB 720p
-  description: ''
-  qualities:
-  - id: 14
-    name: WEBDL-720p
-  - id: 15
-    name: WEBRip-720p
-  - id: 16
-    name: HDTV-720p
-- id: 18
-  name: Bluray-480p
-- id: -1
   name: WEB 480p
   description: ''
   qualities:
-  - id: 19
-    name: WEBDL-480p
   - id: 20
     name: WEBRip-480p
-- id: 22
-  name: DVD
-- id: 24
-  name: SDTV
+  - id: 19
+    name: WEBDL-480p
+- id: 18
+  name: Bluray-480p
+- id: -3
+  name: WEB 720p
+  description: ''
+  qualities:
+  - id: 16
+    name: HDTV-720p
+  - id: 15
+    name: WEBRip-720p
+  - id: 14
+    name: WEBDL-720p
+- id: 13
+  name: Bluray-720p
+- id: -2
+  name: WEB 1080p
+  description: ''
+  qualities:
+  - id: 12
+    name: HDTV-1080p
+  - id: 11
+    name: WEBRip-1080p
+  - id: 9
+    name: WEBDL-1080p
+- id: -1
+  name: Bluray 1080p
+  description: ''
+  qualities:
+  - id: null
+    name: Bluray-1080p Remux
+  - id: 10
+    name: Bluray-1080p
 upgrade_until:
-  id: -4
+  id: -1
   name: Bluray 1080p
 language: any

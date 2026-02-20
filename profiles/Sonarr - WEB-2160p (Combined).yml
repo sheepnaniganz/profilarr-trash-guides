@@ -38,22 +38,22 @@ custom_formats:
   score: -10000
 qualities:
 - id: -2
-  name: WEB 2160p
-  description: ''
-  qualities:
-  - id: 5
-    name: WEBDL-2160p
-  - id: 6
-    name: WEBRip-2160p
-- id: -1
   name: WEB 1080p
   description: ''
   qualities:
-  - id: 9
-    name: WEBDL-1080p
   - id: 11
     name: WEBRip-1080p
+  - id: 9
+    name: WEBDL-1080p
+- id: -1
+  name: WEB 2160p
+  description: ''
+  qualities:
+  - id: 6
+    name: WEBRip-2160p
+  - id: 5
+    name: WEBDL-2160p
 upgrade_until:
-  id: -2
+  id: -1
   name: WEB 2160p
 language: any

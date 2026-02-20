@@ -15,6 +15,11 @@ conditions:
   required: false
   type: source
   source: webrip
+- name: Radarr - BLOOM
+  negate: false
+  required: false
+  type: release_group
+  pattern: BLOOM
 - name: Radarr - Dooky
   negate: false
   required: false
