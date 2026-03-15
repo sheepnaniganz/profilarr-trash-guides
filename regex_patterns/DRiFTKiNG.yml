@@ -1,0 +1,7 @@
+name: DRiFTKiNG
+pattern: \b(DRiFTKiNG|DK)\b
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

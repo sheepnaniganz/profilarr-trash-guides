@@ -1,0 +1,7 @@
+name: RTemp
+pattern: ^(RTemp)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

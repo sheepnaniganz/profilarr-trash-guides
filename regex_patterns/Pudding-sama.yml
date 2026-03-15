@@ -1,0 +1,7 @@
+name: Pudding-sama
+pattern: ^(Pudding-sama)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

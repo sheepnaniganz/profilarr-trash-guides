@@ -1,6 +1,7 @@
-name: Sonarr - SiXTYNiNE
+name: SiXTYNiNE
 pattern: ^(SiXTYNiNE)$
 description: ''
 tags:
+- Radarr
 - Sonarr
 tests: []

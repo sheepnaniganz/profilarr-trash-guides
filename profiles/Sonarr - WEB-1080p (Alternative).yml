@@ -36,22 +36,6 @@ custom_formats:
 - name: Sonarr - LQ (Release Title)
   score: -10000
 qualities:
-- id: 24
-  name: SDTV
-- id: 22
-  name: DVD
-- id: 18
-  name: Bluray-480p
-- id: -3
-  name: WEB 480p
-  description: ''
-  qualities:
-  - id: 20
-    name: WEBRip-480p
-  - id: 19
-    name: WEBDL-480p
-- id: 17
-  name: Bluray-576p
 - id: 16
   name: HDTV-720p
 - id: 13

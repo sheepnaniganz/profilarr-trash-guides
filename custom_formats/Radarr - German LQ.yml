@@ -224,4 +224,9 @@ conditions:
   required: false
   type: release_group
   pattern: Radarr - VideoStar
+- name: Radarr - SD7
+  negate: false
+  required: false
+  type: release_group
+  pattern: SD7
 tests: []

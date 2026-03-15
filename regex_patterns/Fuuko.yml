@@ -1,0 +1,7 @@
+name: Fuuko
+pattern: ^(Fuuko)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

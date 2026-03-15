@@ -1,0 +1,7 @@
+name: MRW
+pattern: ^(MRW)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

@@ -1,0 +1,7 @@
+name: Tanuki
+pattern: ^(Tanuki)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

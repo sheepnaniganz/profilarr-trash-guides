@@ -1,0 +1,7 @@
+name: GP
+pattern: ^(GP)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

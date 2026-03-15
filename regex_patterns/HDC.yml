@@ -1,6 +1,7 @@
-name: Sonarr - ABJ
-pattern: ^(ABJ)$
+name: HDC
+pattern: ^(HDC)$
 description: ''
 tags:
+- Radarr
 - Sonarr
 tests: []

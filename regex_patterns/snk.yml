@@ -1,0 +1,7 @@
+name: snk
+pattern: \b(snk|shw)\b
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

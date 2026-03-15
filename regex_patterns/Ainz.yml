@@ -1,0 +1,7 @@
+name: Ainz
+pattern: ^(Ainz)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

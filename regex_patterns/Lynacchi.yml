@@ -1,0 +1,7 @@
+name: Lynacchi
+pattern: ^(Lynacchi)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

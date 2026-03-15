@@ -1,0 +1,7 @@
+name: HiSHiRO
+pattern: ^(HiSHiRO)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

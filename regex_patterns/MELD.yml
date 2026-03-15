@@ -1,0 +1,7 @@
+name: MELD
+pattern: ^(MELD)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

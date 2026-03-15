@@ -1,0 +1,7 @@
+name: FumoFriday
+pattern: ^(FumoFriday)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

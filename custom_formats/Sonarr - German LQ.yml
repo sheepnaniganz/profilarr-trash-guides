@@ -214,4 +214,9 @@ conditions:
   required: false
   type: release_group
   pattern: FRAGGERS
+- name: Sonarr - SD7
+  negate: false
+  required: false
+  type: release_group
+  pattern: SD7
 tests: []

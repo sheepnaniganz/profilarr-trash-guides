@@ -1,45 +1,50 @@
-name: Sonarr - German Web Tier 02
-description: '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#german-web-tier-02)'
+name: Sonarr - German Anime Web Tier 02
+description: '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#german-anime-web-tier-02)'
 tags:
 - Sonarr
 - Release Group
 - Source
 conditions:
-- name: Sonarr - VECTOR
-  negate: false
-  required: false
-  type: release_group
-  pattern: VECTOR
-- name: Sonarr - MULTiPLEX
-  negate: false
-  required: false
-  type: release_group
-  pattern: Sonarr - MULTiPLEX
-- name: Sonarr - SiXTYNiNE
-  negate: false
-  required: false
-  type: release_group
-  pattern: SiXTYNiNE
-- name: Sonarr - Oergel
-  negate: false
-  required: false
-  type: release_group
-  pattern: Sonarr - Oergel
-- name: Sonarr - 4SF
-  negate: false
-  required: false
-  type: release_group
-  pattern: Sonarr - 4SF
-- name: Sonarr - 4SF Aliases
-  negate: false
-  required: false
-  type: release_group
-  pattern: Sonarr - 4SF Aliases
 - name: Sonarr - ABJ
   negate: false
   required: false
   type: release_group
   pattern: ABJ
+- name: Sonarr - DRiFTKiNG
+  negate: false
+  required: false
+  type: release_group
+  pattern: DRiFTKiNG
+- name: Sonarr - VECTOR
+  negate: false
+  required: false
+  type: release_group
+  pattern: VECTOR
+- name: Sonarr - ZeroTwo
+  negate: false
+  required: false
+  type: release_group
+  pattern: ZeroTwo
+- name: Sonarr - ZeroTwo Aliases
+  negate: false
+  required: false
+  type: release_group
+  pattern: ZeroTwo Aliases
+- name: Sonarr - SiXTYNiNE
+  negate: false
+  required: false
+  type: release_group
+  pattern: SiXTYNiNE
+- name: Sonarr - AO
+  negate: false
+  required: false
+  type: release_group
+  pattern: AO
+- name: Sonarr - MELD
+  negate: false
+  required: false
+  type: release_group
+  pattern: MELD
 - name: Sonarr - WebDL
   negate: false
   required: false
