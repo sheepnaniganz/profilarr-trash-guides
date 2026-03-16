@@ -20,6 +20,11 @@ conditions:
   required: false
   type: release_group
   pattern: Flights
+- name: Radarr - GuyZo
+  negate: false
+  required: false
+  type: release_group
+  pattern: Radarr - GuyZo
 - name: Radarr - SasukeducK
   negate: false
   required: false
