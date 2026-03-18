@@ -9,4 +9,9 @@ conditions:
   required: true
   type: release_title
   pattern: v2
+- name: Radarr - Not Higher Versions
+  negate: true
+  required: true
+  type: release_title
+  pattern: Higher Versions
 tests: []

@@ -1,0 +1,7 @@
+name: Higher Versions (1)
+pattern: (\b|\d)(v[4])\b|\b((repack|proper)3)\b|\bREAL\.(REAL\.)(PROPER|REPACK)\b
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []
