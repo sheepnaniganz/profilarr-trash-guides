@@ -34,6 +34,11 @@ conditions:
   required: false
   type: release_title
   pattern: Radarr - GalaxyRG
+- name: Radarr - HHWEB (No MA)
+  negate: false
+  required: false
+  type: release_title
+  pattern: Radarr - HHWEB (No MA)
 - name: Radarr - jennaortega
   negate: false
   required: false
