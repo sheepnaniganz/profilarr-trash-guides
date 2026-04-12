@@ -1,0 +1,7 @@
+name: R&H
+pattern: ^(R&H)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []
