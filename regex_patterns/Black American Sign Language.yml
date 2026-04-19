@@ -1,0 +1,7 @@
+name: Black American Sign Language
+pattern: \b(BASL)\b
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []
