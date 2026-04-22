@@ -1,0 +1,81 @@
+name: Sonarr - Base Profile
+description: '[Profile from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles)
+
+
+  This is a base profile that we use for testing'
+tags:
+- Sonarr
+upgradesAllowed: true
+minCustomFormatScore: 0
+upgradeUntilScore: 10000
+minScoreIncrement: 1
+custom_formats:
+- name: Sonarr - BR-DISK
+  score: -10000
+- name: Sonarr - BR-DISK (BTN)
+  score: -10000
+- name: Sonarr - Extras
+  score: -10000
+- name: Sonarr - LQ
+  score: -10000
+- name: Sonarr - LQ (Release Title)
+  score: -10000
+qualities:
+- id: 24
+  name: SDTV
+- id: -4
+  name: WEBDL-480p | WEBRip-480p
+  description: ''
+  qualities:
+  - id: 19
+    name: WEBDL-480p
+  - id: 20
+    name: WEBRip-480p
+- id: 18
+  name: Bluray-480p
+- id: 17
+  name: Bluray-576p
+- id: 16
+  name: HDTV-720p
+- id: 12
+  name: HDTV-1080p
+- id: -3
+  name: WEBDL-720p | WEBRip-720p
+  description: ''
+  qualities:
+  - id: 14
+    name: WEBDL-720p
+  - id: 15
+    name: WEBRip-720p
+- id: 13
+  name: Bluray-720p
+- id: -2
+  name: WEBDL-1080p | WEBRip-1080p
+  description: ''
+  qualities:
+  - id: 9
+    name: WEBDL-1080p
+  - id: 11
+    name: WEBRip-1080p
+- id: 10
+  name: Bluray-1080p
+- id: null
+  name: Bluray-1080p Remux
+- id: 7
+  name: HDTV-2160p
+- id: -1
+  name: WEBDL-2160p | WEBRip-2160p
+  description: ''
+  qualities:
+  - id: 5
+    name: WEBDL-2160p
+  - id: 6
+    name: WEBRip-2160p
+- id: 4
+  name: Bluray-2160p
+- id: null
+  name: Bluray-2160p Remux
+upgrade_until:
+  id: null
+  name: Bluray-2160p Remux
+language: any
