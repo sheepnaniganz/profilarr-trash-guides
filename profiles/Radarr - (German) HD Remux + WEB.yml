@@ -50,14 +50,6 @@ custom_formats:
   score: 5
 - name: Radarr - Repack-Proper
   score: 5
-- name: Radarr - 3D
-  score: -35000
-- name: Radarr - AV1
-  score: -35000
-- name: Radarr - BR-DISK
-  score: -35000
-- name: Radarr - Extras
-  score: -35000
 - name: Radarr - German LQ
   score: -35000
 - name: Radarr - German LQ (release title)
@@ -65,10 +57,6 @@ custom_formats:
 - name: Radarr - German Microsized
   score: -35000
 - name: Radarr - Line-Mic Dubbed
-  score: -35000
-- name: Radarr - LQ
-  score: -35000
-- name: Radarr - LQ (Release Title)
   score: -35000
 - name: Radarr - Not German or English
   score: -35000
