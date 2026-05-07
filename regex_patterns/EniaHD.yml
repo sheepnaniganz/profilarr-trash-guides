@@ -1,0 +1,7 @@
+name: EniaHD
+pattern: ^(EniaHD)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

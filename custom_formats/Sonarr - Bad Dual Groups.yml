@@ -39,6 +39,11 @@ conditions:
   required: false
   type: release_group
   pattern: Cory
+- name: Sonarr - EniaHD
+  negate: false
+  required: false
+  type: release_group
+  pattern: EniaHD
 - name: Sonarr - EXTREME
   negate: false
   required: false

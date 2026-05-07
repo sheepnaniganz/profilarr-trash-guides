@@ -34,6 +34,11 @@ conditions:
   required: false
   type: release_group
   pattern: Cory
+- name: Radarr - EniaHD
+  negate: false
+  required: false
+  type: release_group
+  pattern: EniaHD
 - name: Radarr - EXTREME
   negate: false
   required: false
