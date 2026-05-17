@@ -1,0 +1,7 @@
+name: LINETV
+pattern: \b(LINETV)\b
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

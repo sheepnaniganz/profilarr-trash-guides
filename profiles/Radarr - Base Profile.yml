@@ -9,11 +9,7 @@ upgradesAllowed: true
 minCustomFormatScore: 0
 upgradeUntilScore: 10000
 minScoreIncrement: 1
-custom_formats:
-- name: Radarr - BR-DISK
-  score: -10000
-- name: Radarr - Extras
-  score: -10000
+custom_formats: []
 qualities:
 - id: -4
   name: WEBDL-480p | WEBRip-480p

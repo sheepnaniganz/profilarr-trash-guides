@@ -1,0 +1,7 @@
+name: unco@AvistaZ
+pattern: ^(unco@AvistaZ)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

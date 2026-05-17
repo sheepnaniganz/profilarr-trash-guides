@@ -1,0 +1,7 @@
+name: MMR
+pattern: ^(MMR)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

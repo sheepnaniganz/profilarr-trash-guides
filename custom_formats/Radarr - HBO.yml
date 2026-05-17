@@ -9,7 +9,7 @@ conditions:
   negate: false
   required: false
   type: release_title
-  pattern: HBO
+  pattern: HBO (1)
 - name: Radarr - HBO Rename
   negate: false
   required: false

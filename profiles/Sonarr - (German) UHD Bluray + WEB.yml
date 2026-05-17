@@ -50,12 +50,6 @@ custom_formats:
   score: 5
 - name: Sonarr - Repack-Proper
   score: 5
-- name: Sonarr - German LQ
-  score: -35000
-- name: Sonarr - German LQ (release title)
-  score: -35000
-- name: Sonarr - German Microsized
-  score: -35000
 - name: Sonarr - Not German or English
   score: -35000
 qualities:

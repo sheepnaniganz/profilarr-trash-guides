@@ -1,0 +1,7 @@
+name: ANDY
+pattern: ^(ANDY)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

@@ -1,0 +1,7 @@
+name: unco
+pattern: ^(unco)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

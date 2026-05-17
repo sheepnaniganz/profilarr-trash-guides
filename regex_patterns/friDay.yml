@@ -1,0 +1,7 @@
+name: friDay
+pattern: \b(friDay)\b
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

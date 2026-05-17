@@ -1,0 +1,7 @@
+name: MrHulk
+pattern: ^(MrHulk)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

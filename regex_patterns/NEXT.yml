@@ -1,0 +1,7 @@
+name: NEXT
+pattern: ^(NEXT)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

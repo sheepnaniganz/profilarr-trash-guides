@@ -95,12 +95,6 @@ custom_formats:
   score: -35000
 - name: Sonarr - Anime Raws
   score: -35000
-- name: Sonarr - German LQ
-  score: -35000
-- name: Sonarr - German LQ (release title)
-  score: -35000
-- name: Sonarr - German Microsized
-  score: -35000
 - name: Sonarr - Not German, Japanese or English
   score: -35000
 - name: Sonarr - VOSTFR

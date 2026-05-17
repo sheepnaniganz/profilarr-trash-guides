@@ -1,0 +1,7 @@
+name: YOUKU
+pattern: \b(YOUKU)\b
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

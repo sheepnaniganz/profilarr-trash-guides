@@ -1,0 +1,7 @@
+name: KCW
+pattern: \b(KCW|KOCOWA)\b
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

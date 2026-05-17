@@ -1,0 +1,7 @@
+name: CHDWEB
+pattern: ^(CHDWEB)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

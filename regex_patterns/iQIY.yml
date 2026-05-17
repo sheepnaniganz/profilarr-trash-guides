@@ -1,0 +1,7 @@
+name: iQIY
+pattern: \b(IQIY|IQ|iQIYI)\b
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

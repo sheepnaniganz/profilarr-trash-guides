@@ -26,8 +26,6 @@ custom_formats:
   score: 6
 - name: Radarr - Repack-Proper
   score: 5
-- name: Radarr - BR-DISK
-  score: -10000
 qualities:
 - id: -1
   name: WEB 2160p

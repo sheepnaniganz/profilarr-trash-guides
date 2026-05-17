@@ -97,14 +97,6 @@ custom_formats:
   score: -35000
 - name: Radarr - Anime Raws
   score: -35000
-- name: Radarr - German LQ
-  score: -35000
-- name: Radarr - German LQ (release title)
-  score: -35000
-- name: Radarr - German Microsized
-  score: -35000
-- name: Radarr - Line-Mic Dubbed
-  score: -35000
 - name: Radarr - Not German, Japanese or English
   score: -35000
 - name: Radarr - VOSTFR

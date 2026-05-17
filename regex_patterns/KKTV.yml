@@ -1,0 +1,7 @@
+name: KKTV
+pattern: \b(KKTV)\b
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

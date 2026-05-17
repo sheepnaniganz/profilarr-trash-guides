@@ -1,0 +1,7 @@
+name: AppleTor
+pattern: ^(AppleTor)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

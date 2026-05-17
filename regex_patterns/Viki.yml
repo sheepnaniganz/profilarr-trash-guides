@@ -1,0 +1,7 @@
+name: Viki
+pattern: \b(Viki)\b
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []
