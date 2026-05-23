@@ -54,7 +54,7 @@ conditions:
   negate: false
   required: false
   type: release_title
-  pattern: Radarr - HDR10+
+  pattern: HDR10+
 - name: Radarr - DV
   negate: false
   required: false
