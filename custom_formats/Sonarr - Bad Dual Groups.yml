@@ -14,6 +14,21 @@ conditions:
   required: false
   type: release_group
   pattern: BAT
+- name: Sonarr - CYPHER
+  negate: false
+  required: false
+  type: release_group
+  pattern: CYPHER
+- name: Sonarr - MLH
+  negate: false
+  required: false
+  type: release_group
+  pattern: MLH
+- name: Sonarr - XiQUEXiQUE
+  negate: false
+  required: false
+  type: release_group
+  pattern: XiQUEXiQUE
 - name: Sonarr - BiOMA
   negate: false
   required: false

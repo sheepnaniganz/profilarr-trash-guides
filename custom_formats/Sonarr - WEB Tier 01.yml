@@ -55,6 +55,11 @@ conditions:
   required: false
   type: release_group
   pattern: Kitsune (1)
+- name: Sonarr - MADSKY
+  negate: false
+  required: false
+  type: release_group
+  pattern: MADSKY
 - name: Sonarr - monkee
   negate: false
   required: false

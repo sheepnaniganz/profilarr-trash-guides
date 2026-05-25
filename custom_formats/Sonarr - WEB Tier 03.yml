@@ -5,16 +5,6 @@ tags:
 - Release Group
 - Source
 conditions:
-- name: Sonarr - WEBDL
-  negate: false
-  required: false
-  type: source
-  source: web_dl
-- name: Sonarr - WEBRIP
-  negate: false
-  required: false
-  type: source
-  source: webrip
 - name: Sonarr - BLOOM
   negate: false
   required: false
@@ -60,4 +50,14 @@ conditions:
   required: false
   type: release_group
   pattern: Sonarr - ViSiON
+- name: Sonarr - WEBDL
+  negate: false
+  required: false
+  type: source
+  source: web_dl
+- name: Sonarr - WEBRIP
+  negate: false
+  required: false
+  type: source
+  source: webrip
 tests: []
