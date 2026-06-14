@@ -24,6 +24,11 @@ conditions:
   required: false
   type: release_title
   pattern: Feranki1980
+- name: Sonarr - R&H
+  negate: false
+  required: false
+  type: release_title
+  pattern: R&H
 - name: Sonarr - TeeWee
   negate: false
   required: false

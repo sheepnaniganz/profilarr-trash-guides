@@ -109,11 +109,6 @@ conditions:
   required: false
   type: release_group
   pattern: PSA
-- name: Sonarr - R&H
-  negate: false
-  required: false
-  type: release_group
-  pattern: R&H
 - name: Sonarr - SasukeducK
   negate: false
   required: false

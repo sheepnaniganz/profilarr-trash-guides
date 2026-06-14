@@ -49,6 +49,11 @@ conditions:
   required: false
   type: release_title
   pattern: Radarr - PiRaTeS (no WEBDL)
+- name: Radarr - R&H
+  negate: false
+  required: false
+  type: release_title
+  pattern: R&H
 - name: Radarr - READ NOTE
   negate: false
   required: false

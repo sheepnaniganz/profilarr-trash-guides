@@ -379,11 +379,6 @@ conditions:
   required: false
   type: release_group
   pattern: Radarr - PTNK
-- name: Radarr - R&H
-  negate: false
-  required: false
-  type: release_group
-  pattern: R&H
 - name: Radarr - RARBG
   negate: false
   required: false
