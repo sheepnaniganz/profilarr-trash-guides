@@ -10,7 +10,7 @@ description: '[Profile from TRaSH-Guides.](https://trash-guides.info/Radarr/rada
 tags:
 - Radarr
 upgradesAllowed: true
-minCustomFormatScore: 2725
+minCustomFormatScore: 2370
 upgradeUntilScore: 10000
 minScoreIncrement: 1
 custom_formats:
@@ -21,33 +21,37 @@ custom_formats:
 - name: Radarr - BHDStudio
   score: 2240
 - name: Radarr - DTS X
-  score: 1940
+  score: 1745
 - name: Radarr - TrueHD ATMOS
-  score: 1940
+  score: 1745
 - name: Radarr - DTS-HD MA
-  score: 1930
+  score: 1735
 - name: Radarr - TrueHD
-  score: 1930
+  score: 1735
 - name: Radarr - ATMOS (undefined)
-  score: 800
+  score: 605
 - name: Radarr - DD+ ATMOS
-  score: 800
+  score: 605
 - name: Radarr - DD+
-  score: 795
+  score: 600
 - name: Radarr - DD
-  score: 770
+  score: 575
 - name: Radarr - FLAC
-  score: 500
+  score: 305
 - name: Radarr - PCM
-  score: 500
+  score: 305
 - name: Radarr - DTS-HD HRA
-  score: 400
+  score: 205
+- name: Radarr - 7.1 Surround
+  score: 195
+- name: Radarr - 5.1 Surround
+  score: 190
+- name: Radarr - 2.0 Stereo
+  score: 157
+- name: Radarr - 1.0 Mono
+  score: 156
 - name: Radarr - DTS-ES
-  score: 250
-- name: Radarr - DTS
-  score: 200
-- name: Radarr - AAC
-  score: 100
+  score: 55
 - name: Radarr - WEB Tier 01
   score: 30
 - name: Radarr - WEB Tier 02
@@ -56,16 +60,14 @@ custom_formats:
   score: 10
 - name: Radarr - WEB Tier 03
   score: 10
+- name: Radarr - DTS
+  score: 5
 - name: Radarr - Repack3
   score: 3
 - name: Radarr - Repack2
   score: 2
 - name: Radarr - Repack-Proper
   score: 1
-- name: Radarr - 2.0 Stereo
-  score: -275
-- name: Radarr - 1.0 Mono
-  score: -285
 - name: Radarr - 3D
   score: -10000
 - name: Radarr - AV1
