@@ -1,4 +1,4 @@
-name: Stereo
+name: Stereo (1)
 pattern: (?<!repac)[^0-9]2[ .]0\b|\bStereo\b
 description: ''
 tags:

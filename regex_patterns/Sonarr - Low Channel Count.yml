@@ -1,7 +1,6 @@
-name: Low Channel Count
+name: Sonarr - Low Channel Count
 pattern: (?<!repac)[^0-9][1-4][ .][0-1]\b|\b(Stereo|Mono)\b
 description: ''
 tags:
-- Radarr
 - Sonarr
 tests: []

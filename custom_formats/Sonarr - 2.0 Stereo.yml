@@ -8,7 +8,7 @@ conditions:
   negate: false
   required: true
   type: release_title
-  pattern: Stereo
+  pattern: Stereo (1)
 - name: Sonarr - Not 3.0ch
   negate: true
   required: true

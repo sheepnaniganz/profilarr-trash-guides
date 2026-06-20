@@ -13,5 +13,5 @@ conditions:
   negate: true
   required: true
   type: release_title
-  pattern: Low Channel Count
+  pattern: Sonarr - Low Channel Count
 tests: []
