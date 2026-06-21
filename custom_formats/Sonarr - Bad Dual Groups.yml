@@ -14,21 +14,6 @@ conditions:
   required: false
   type: release_group
   pattern: BAT
-- name: Sonarr - CYPHER
-  negate: false
-  required: false
-  type: release_group
-  pattern: CYPHER
-- name: Sonarr - MLH
-  negate: false
-  required: false
-  type: release_group
-  pattern: MLH
-- name: Sonarr - XiQUEXiQUE
-  negate: false
-  required: false
-  type: release_group
-  pattern: XiQUEXiQUE
 - name: Sonarr - BiOMA
   negate: false
   required: false
@@ -49,11 +34,21 @@ conditions:
   required: false
   type: release_group
   pattern: C.A.A
+- name: Sonarr - C76
+  negate: false
+  required: false
+  type: release_group
+  pattern: C76
 - name: Sonarr - Cory
   negate: false
   required: false
   type: release_group
   pattern: Cory
+- name: Sonarr - CYPHER
+  negate: false
+  required: false
+  type: release_group
+  pattern: CYPHER
 - name: Sonarr - EniaHD
   negate: false
   required: false
@@ -89,6 +84,11 @@ conditions:
   required: false
   type: release_group
   pattern: LCD
+- name: Sonarr - MLH
+  negate: false
+  required: false
+  type: release_group
+  pattern: MLH
 - name: Sonarr - N3G4N
   negate: false
   required: false
@@ -144,6 +144,11 @@ conditions:
   required: false
   type: release_group
   pattern: WTV
+- name: Sonarr - XiQUEXiQUE
+  negate: false
+  required: false
+  type: release_group
+  pattern: XiQUEXiQUE
 - name: Sonarr - Yatogam1
   negate: false
   required: false

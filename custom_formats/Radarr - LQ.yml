@@ -384,6 +384,11 @@ conditions:
   required: false
   type: release_group
   pattern: Radarr - RARBG
+- name: Radarr - RBB
+  negate: false
+  required: false
+  type: release_group
+  pattern: Radarr - RBB
 - name: Radarr - RDN
   negate: false
   required: false

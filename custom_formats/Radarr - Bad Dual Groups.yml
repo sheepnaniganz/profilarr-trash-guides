@@ -29,6 +29,11 @@ conditions:
   required: false
   type: release_group
   pattern: C.A.A
+- name: Radarr - C76
+  negate: false
+  required: false
+  type: release_group
+  pattern: C76
 - name: Radarr - Cory
   negate: false
   required: false
