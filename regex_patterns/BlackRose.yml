@@ -1,0 +1,7 @@
+name: BlackRose
+pattern: \b(BlackRose)\b
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

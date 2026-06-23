@@ -35,6 +35,11 @@ conditions:
   required: false
   type: release_title
   pattern: Arid
+- name: Sonarr - BlackRose
+  negate: false
+  required: false
+  type: release_title
+  pattern: BlackRose
 - name: Sonarr - FateSucks
   negate: false
   required: false
@@ -90,11 +95,6 @@ conditions:
   required: false
   type: release_title
   pattern: Orphan
-- name: Sonarr - PMR
-  negate: false
-  required: false
-  type: release_title
-  pattern: PMR
 - name: Sonarr - Vodes
   negate: false
   required: false

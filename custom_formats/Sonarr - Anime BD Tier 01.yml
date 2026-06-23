@@ -45,11 +45,6 @@ conditions:
   required: false
   type: release_title
   pattern: Moxie
-- name: Sonarr - NAN0
-  negate: false
-  required: false
-  type: release_title
-  pattern: NAN0
 - name: Sonarr - sam
   negate: false
   required: false
@@ -65,9 +60,4 @@ conditions:
   required: false
   type: release_title
   pattern: SoM
-- name: Sonarr - ZR
-  negate: false
-  required: false
-  type: release_title
-  pattern: ZR
 tests: []

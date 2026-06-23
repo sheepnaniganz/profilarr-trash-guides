@@ -40,11 +40,6 @@ conditions:
   required: false
   type: release_title
   pattern: Moxie
-- name: Radarr - NAN0
-  negate: false
-  required: false
-  type: release_title
-  pattern: NAN0
 - name: Radarr - sam
   negate: false
   required: false
@@ -60,9 +55,4 @@ conditions:
   required: false
   type: release_title
   pattern: SoM
-- name: Radarr - ZR
-  negate: false
-  required: false
-  type: release_title
-  pattern: ZR
 tests: []

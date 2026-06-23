@@ -30,6 +30,11 @@ conditions:
   required: false
   type: release_title
   pattern: Arid
+- name: Radarr - BlackRose
+  negate: false
+  required: false
+  type: release_title
+  pattern: BlackRose
 - name: Radarr - FateSucks
   negate: false
   required: false
@@ -85,11 +90,6 @@ conditions:
   required: false
   type: release_title
   pattern: Orphan
-- name: Radarr - PMR
-  negate: false
-  required: false
-  type: release_title
-  pattern: PMR
 - name: Radarr - Vodes
   negate: false
   required: false

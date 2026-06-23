@@ -95,6 +95,11 @@ conditions:
   required: false
   type: release_title
   pattern: Mysteria
+- name: Radarr - NAN0
+  negate: false
+  required: false
+  type: release_title
+  pattern: NAN0
 - name: Radarr - Netaro
   negate: false
   required: false
@@ -125,6 +130,11 @@ conditions:
   required: false
   type: release_title
   pattern: P9
+- name: Radarr - PMR
+  negate: false
+  required: false
+  type: release_title
+  pattern: PMR
 - name: Radarr - RUDY
   negate: false
   required: false
@@ -160,9 +170,19 @@ conditions:
   required: false
   type: release_title
   pattern: SubsMix
+- name: Radarr - Sylvar
+  negate: false
+  required: false
+  type: release_title
+  pattern: Sylvar
 - name: Radarr - uba
   negate: false
   required: false
   type: release_title
   pattern: uba
+- name: Radarr - ZR
+  negate: false
+  required: false
+  type: release_title
+  pattern: ZR
 tests: []
