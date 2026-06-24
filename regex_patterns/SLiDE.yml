@@ -1,0 +1,7 @@
+name: SLiDE
+pattern: ^(SLiDE)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

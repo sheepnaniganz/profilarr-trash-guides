@@ -1,0 +1,7 @@
+name: FLORiX
+pattern: ^(FLORiX)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

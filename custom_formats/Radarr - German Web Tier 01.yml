@@ -5,41 +5,36 @@ tags:
 - Release Group
 - Source
 conditions:
-- name: Radarr - ZeroTwo
+- name: Radarr - CNY
   negate: false
   required: false
   type: release_group
-  pattern: ZeroTwo
-- name: Radarr - ZeroTwo Aliases
-  negate: false
-  required: false
-  type: release_group
-  pattern: ZeroTwo Aliases
-- name: Radarr - TSCC
-  negate: false
-  required: false
-  type: release_group
-  pattern: TSCC
-- name: Radarr - TvR
-  negate: false
-  required: false
-  type: release_group
-  pattern: TvR
-- name: Radarr - NIMA4K
-  negate: false
-  required: false
-  type: release_group
-  pattern: NIMA4K
-- name: Radarr - TVS
-  negate: false
-  required: false
-  type: release_group
-  pattern: TVS
+  pattern: CNY
 - name: Radarr - D02KU
   negate: false
   required: false
   type: release_group
   pattern: Radarr - D02KU
+- name: Radarr - KOMET
+  negate: false
+  required: false
+  type: release_group
+  pattern: KOMET
+- name: Radarr - MEDiATHEK
+  negate: false
+  required: false
+  type: release_group
+  pattern: MEDiATHEK
+- name: Radarr - NIMA4K
+  negate: false
+  required: false
+  type: release_group
+  pattern: NIMA4K
+- name: Radarr - pmHD
+  negate: false
+  required: false
+  type: release_group
+  pattern: pmHD (1)
 - name: Radarr - PXL
   negate: false
   required: false
@@ -50,21 +45,6 @@ conditions:
   required: false
   type: release_group
   pattern: QfG (1)
-- name: Radarr - CNY
-  negate: false
-  required: false
-  type: release_group
-  pattern: CNY
-- name: Radarr - WeebPinn
-  negate: false
-  required: false
-  type: release_group
-  pattern: WeebPinn
-- name: Radarr - MEDiATHEK
-  negate: false
-  required: false
-  type: release_group
-  pattern: MEDiATHEK
 - name: Radarr - RiiR
   negate: false
   required: false
@@ -75,16 +55,46 @@ conditions:
   required: false
   type: release_group
   pattern: RiiR Aliases
+- name: Radarr - SLiDE
+  negate: false
+  required: false
+  type: release_group
+  pattern: SLiDE
+- name: Radarr - TSCC
+  negate: false
+  required: false
+  type: release_group
+  pattern: TSCC
+- name: Radarr - TvR
+  negate: false
+  required: false
+  type: release_group
+  pattern: TvR
+- name: Radarr - TVS
+  negate: false
+  required: false
+  type: release_group
+  pattern: TVS
 - name: Radarr - WalterBishop
   negate: false
   required: false
   type: release_group
   pattern: WalterBishop
-- name: Radarr - pmHD
+- name: Radarr - WeebPinn
   negate: false
   required: false
   type: release_group
-  pattern: pmHD (1)
+  pattern: WeebPinn
+- name: Radarr - ZeroTwo
+  negate: false
+  required: false
+  type: release_group
+  pattern: ZeroTwo
+- name: Radarr - ZeroTwo Aliases
+  negate: false
+  required: false
+  type: release_group
+  pattern: ZeroTwo Aliases
 - name: Radarr - WebDL
   negate: false
   required: false

@@ -5,36 +5,26 @@ tags:
 - Release Group
 - Source
 conditions:
-- name: Sonarr - ZeroTwo
+- name: Sonarr - CNY
   negate: false
   required: false
   type: release_group
-  pattern: ZeroTwo
-- name: Sonarr - ZeroTwo Aliases
+  pattern: CNY
+- name: Sonarr - KOMET
   negate: false
   required: false
   type: release_group
-  pattern: Sonarr - ZeroTwo Aliases
-- name: Sonarr - TSCC
+  pattern: KOMET
+- name: Sonarr - MEDiATHEK
   negate: false
   required: false
   type: release_group
-  pattern: TSCC
-- name: Sonarr - TvR
-  negate: false
-  required: false
-  type: release_group
-  pattern: TvR
+  pattern: MEDiATHEK
 - name: Sonarr - NIMA4K
   negate: false
   required: false
   type: release_group
   pattern: NIMA4K
-- name: Sonarr - TVS
-  negate: false
-  required: false
-  type: release_group
-  pattern: TVS
 - name: Sonarr - PXL
   negate: false
   required: false
@@ -45,21 +35,6 @@ conditions:
   required: false
   type: release_group
   pattern: QfG (1)
-- name: Sonarr - CNY
-  negate: false
-  required: false
-  type: release_group
-  pattern: CNY
-- name: Sonarr - WeebPinn
-  negate: false
-  required: false
-  type: release_group
-  pattern: WeebPinn
-- name: Sonarr - MEDiATHEK
-  negate: false
-  required: false
-  type: release_group
-  pattern: MEDiATHEK
 - name: Sonarr - RiiR
   negate: false
   required: false
@@ -70,11 +45,46 @@ conditions:
   required: false
   type: release_group
   pattern: RiiR Aliases
+- name: Sonarr - SLiDE
+  negate: false
+  required: false
+  type: release_group
+  pattern: SLiDE
+- name: Sonarr - TSCC
+  negate: false
+  required: false
+  type: release_group
+  pattern: TSCC
+- name: Sonarr - TvR
+  negate: false
+  required: false
+  type: release_group
+  pattern: TvR
+- name: Sonarr - TVS
+  negate: false
+  required: false
+  type: release_group
+  pattern: TVS
 - name: Sonarr - WalterBishop
   negate: false
   required: false
   type: release_group
   pattern: WalterBishop
+- name: Sonarr - WeebPinn
+  negate: false
+  required: false
+  type: release_group
+  pattern: WeebPinn
+- name: Sonarr - ZeroTwo
+  negate: false
+  required: false
+  type: release_group
+  pattern: ZeroTwo
+- name: Sonarr - ZeroTwo Aliases
+  negate: false
+  required: false
+  type: release_group
+  pattern: Sonarr - ZeroTwo Aliases
 - name: Sonarr - WebDL
   negate: false
   required: false

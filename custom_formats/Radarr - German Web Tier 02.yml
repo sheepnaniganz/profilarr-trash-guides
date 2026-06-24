@@ -5,26 +5,6 @@ tags:
 - Release Group
 - Source
 conditions:
-- name: Radarr - VECTOR
-  negate: false
-  required: false
-  type: release_group
-  pattern: Radarr - VECTOR (1)
-- name: Radarr - MULTiPLEX
-  negate: false
-  required: false
-  type: release_group
-  pattern: Radarr - MULTiPLEX
-- name: Radarr - SiXTYNiNE
-  negate: false
-  required: false
-  type: release_group
-  pattern: Radarr - SiXTYNiNE (1)
-- name: Radarr - Oergel
-  negate: false
-  required: false
-  type: release_group
-  pattern: Radarr - Oergel
 - name: Radarr - 4SF
   negate: false
   required: false
@@ -35,11 +15,36 @@ conditions:
   required: false
   type: release_group
   pattern: Radarr - ABJ (1)
+- name: Radarr - FLORiX
+  negate: false
+  required: false
+  type: release_group
+  pattern: FLORiX
+- name: Radarr - MULTiPLEX
+  negate: false
+  required: false
+  type: release_group
+  pattern: Radarr - MULTiPLEX
+- name: Radarr - Oergel
+  negate: false
+  required: false
+  type: release_group
+  pattern: Radarr - Oergel
 - name: Radarr - paranoid06
   negate: false
   required: false
   type: release_group
   pattern: Radarr - paranoid06
+- name: Radarr - SiXTYNiNE
+  negate: false
+  required: false
+  type: release_group
+  pattern: Radarr - SiXTYNiNE (1)
+- name: Radarr - VECTOR
+  negate: false
+  required: false
+  type: release_group
+  pattern: Radarr - VECTOR (1)
 - name: Radarr - WebDL
   negate: false
   required: false

@@ -113,7 +113,7 @@ conditions:
   negate: false
   required: false
   type: release_group
-  pattern: Radarr - W4K
+  pattern: W4K
 - name: Radarr - ENDSTATiON
   negate: false
   required: false

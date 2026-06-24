@@ -1,6 +1,7 @@
-name: Radarr - W4K
-pattern: ^(W4K)$
+name: KOMET
+pattern: ^(KOMET)$
 description: ''
 tags:
 - Radarr
+- Sonarr
 tests: []
