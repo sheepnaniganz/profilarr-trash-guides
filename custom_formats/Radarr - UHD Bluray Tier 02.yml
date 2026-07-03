@@ -27,6 +27,11 @@ conditions:
   required: true
   type: resolution
   resolution: 2160p
+- name: Radarr - HiDt
+  negate: false
+  required: false
+  type: release_group
+  pattern: Radarr - HiDt
 - name: Radarr - HQMUX
   negate: false
   required: false

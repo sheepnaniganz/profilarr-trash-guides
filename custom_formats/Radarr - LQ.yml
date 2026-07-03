@@ -94,6 +94,11 @@ conditions:
   required: false
   type: release_group
   pattern: Radarr - CiNE
+- name: Radarr - CLEANUP
+  negate: false
+  required: false
+  type: release_group
+  pattern: Radarr - CLEANUP
 - name: Radarr - COLLECTiVE
   negate: false
   required: false
@@ -174,6 +179,11 @@ conditions:
   required: false
   type: release_group
   pattern: Radarr - FRDS
+- name: Radarr - FS
+  negate: false
+  required: false
+  type: release_group
+  pattern: Radarr - FS
 - name: Radarr - FZHD
   negate: false
   required: false
@@ -434,6 +444,11 @@ conditions:
   required: false
   type: release_group
   pattern: Radarr - SUNSCREEN
+- name: Radarr - SyncUP
+  negate: false
+  required: false
+  type: release_group
+  pattern: Radarr - SyncUP
 - name: Radarr - TBS
   negate: false
   required: false

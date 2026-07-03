@@ -1,0 +1,6 @@
+name: Radarr - SyncUP
+pattern: ^(SyncUP)$
+description: ''
+tags:
+- Radarr
+tests: []
