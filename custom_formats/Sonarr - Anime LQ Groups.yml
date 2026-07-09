@@ -98,7 +98,7 @@ conditions:
   negate: false
   required: false
   type: release_title
-  pattern: Ari
+  pattern: Sonarr - Ari
 - name: Sonarr - ASW
   negate: false
   required: false
