@@ -1,0 +1,7 @@
+name: nekotan
+pattern: \b(nekotan)\b
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

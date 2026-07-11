@@ -30,6 +30,11 @@ conditions:
   required: false
   type: release_title
   pattern: Asakura
+- name: Sonarr - BlackRose
+  negate: false
+  required: false
+  type: release_title
+  pattern: BlackRose
 - name: Sonarr - Cyan
   negate: false
   required: false

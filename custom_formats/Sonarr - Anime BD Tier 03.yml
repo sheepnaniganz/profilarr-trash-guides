@@ -105,6 +105,11 @@ conditions:
   required: false
   type: release_title
   pattern: NAN0
+- name: Sonarr - nekotan
+  negate: false
+  required: false
+  type: release_title
+  pattern: nekotan
 - name: Sonarr - Netaro
   negate: false
   required: false
