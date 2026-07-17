@@ -1,7 +1,7 @@
 name: Sonarr - WEB-1080p (Alternative)
 description: "[Profile from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles)\n\
-  \nQuality Profile that covers:  \n- SDTV, DVD  \n- HDTV 720p, 1080p  \n- WEBDL:\
-  \ 480p, 720, 1080p  \n- Bluray 480p, 576p, 720p, 1080p"
+  \nQuality Profile that covers:  \n- HDTV: 720p, 1080p  \n- WEBDL: 720, 1080p  \n\
+  - Bluray: 720p, 1080p"
 tags:
 - Sonarr
 upgradesAllowed: true
