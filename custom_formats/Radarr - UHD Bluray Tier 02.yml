@@ -37,4 +37,9 @@ conditions:
   required: false
   type: release_group
   pattern: Radarr - HQMUX
+- name: Radarr - RandomBytes
+  negate: false
+  required: false
+  type: release_group
+  pattern: Radarr - RandomBytes
 tests: []

@@ -10,16 +10,16 @@ description: '[Profile from TRaSH-Guides.](https://trash-guides.info/Radarr/rada
 tags:
 - Radarr
 upgradesAllowed: true
-minCustomFormatScore: 3030
+minCustomFormatScore: 3035
 upgradeUntilScore: 10000
 minScoreIncrement: 1
 custom_formats:
 - name: Radarr - WEBDL Boost
-  score: 3030
+  score: 3035
 - name: Radarr - hallowed
-  score: 3020
+  score: 3025
 - name: Radarr - BHDStudio
-  score: 3010
+  score: 3020
 - name: Radarr - DTS X
   score: 1860
 - name: Radarr - TrueHD ATMOS
@@ -49,7 +49,7 @@ custom_formats:
 - name: Radarr - DTS
   score: 400
 - name: Radarr - 7.1 Surround
-  score: 380
+  score: 375
 - name: Radarr - 5.1 Surround
   score: 370
 - name: Radarr - 2.0 Stereo
