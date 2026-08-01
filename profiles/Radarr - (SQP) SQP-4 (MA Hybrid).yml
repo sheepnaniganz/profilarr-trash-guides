@@ -10,50 +10,52 @@ description: '[Profile from TRaSH-Guides.](https://trash-guides.info/Radarr/rada
 tags:
 - Radarr
 upgradesAllowed: true
-minCustomFormatScore: 3040
+minCustomFormatScore: 3970
 upgradeUntilScore: 10000
 minScoreIncrement: 1
 custom_formats:
 - name: Radarr - WEBDL Boost
-  score: 3040
+  score: 3970
 - name: Radarr - hallowed
-  score: 3030
+  score: 3910
 - name: Radarr - BHDStudio
-  score: 3020
+  score: 3900
 - name: Radarr - DTS X
-  score: 1860
+  score: 2510
 - name: Radarr - TrueHD ATMOS
-  score: 1860
+  score: 2510
 - name: Radarr - DTS-HD MA
-  score: 1850
+  score: 2180
 - name: Radarr - TrueHD
-  score: 1850
-- name: Radarr - ATMOS (undefined)
-  score: 730
-- name: Radarr - DD+ ATMOS
-  score: 730
-- name: Radarr - DD+
-  score: 680
-- name: Radarr - DD
-  score: 635
-- name: Radarr - AAC
-  score: 630
-- name: Radarr - FLAC
-  score: 550
-- name: Radarr - PCM
-  score: 550
-- name: Radarr - DTS-HD HRA
-  score: 500
-- name: Radarr - DTS-ES
-  score: 450
-- name: Radarr - DTS
-  score: 400
+  score: 2180
 - name: Radarr - 7.1 Surround
-  score: 370
+  score: 830
 - name: Radarr - 5.1 Surround
-  score: 365
+  score: 780
+- name: Radarr - 6.1 Surround
+  score: 780
+- name: Radarr - ATMOS (undefined)
+  score: 480
+- name: Radarr - DD+ ATMOS
+  score: 480
+- name: Radarr - FLAC
+  score: 380
+- name: Radarr - PCM
+  score: 380
+- name: Radarr - DTS-ES
+  score: 330
+- name: Radarr - DTS-HD HRA
+  score: 330
 - name: Radarr - 2.0 Stereo
-  score: 175
+  score: 310
+- name: Radarr - DD+
+  score: 280
+- name: Radarr - AAC
+  score: 80
+- name: Radarr - DD
+  score: 80
+- name: Radarr - DTS
+  score: 75
 - name: Radarr - WEB Tier 01
   score: 30
 - name: Radarr - WEB Tier 02
