@@ -10,11 +10,6 @@ conditions:
   required: true
   type: quality_modifier
   qualityModifier: remux
-- name: Radarr - ATELiER
-  negate: false
-  required: false
-  type: release_group
-  pattern: Radarr - ATELiER
 - name: Radarr - NCmt
   negate: false
   required: false
