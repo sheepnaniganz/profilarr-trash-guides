@@ -2,6 +2,7 @@ name: Radarr - German Anime Bluray Tier 01
 description: '[Custom format from TRaSH-Guides.](https://trash-guides.info/Radarr/Radarr-collection-of-custom-formats#german-anime-bluray-tier-01)'
 tags:
 - Radarr
+- Quality Modifier
 - Release Group
 - Source
 conditions:
@@ -75,9 +76,9 @@ conditions:
   required: true
   type: source
   source: bluray
-- name: Radarr - Not REMUX
+- name: Radarr - Not Remux
   negate: true
   required: true
-  type: source
-  source: dvd
+  type: quality_modifier
+  qualityModifier: remux
 tests: []

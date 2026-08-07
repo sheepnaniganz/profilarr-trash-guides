@@ -4,6 +4,7 @@ tags:
 - Radarr
 - Quality Modifier
 - Release Group
+- Source
 conditions:
 - name: Radarr - SUBARU
   negate: false
@@ -40,6 +41,11 @@ conditions:
   required: false
   type: release_group
   pattern: AST4u
+- name: Radarr - Bluray
+  negate: false
+  required: true
+  type: source
+  source: bluray
 - name: Radarr - Not Remux
   negate: true
   required: true
