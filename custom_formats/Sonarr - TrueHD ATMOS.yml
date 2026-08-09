@@ -8,12 +8,12 @@ conditions:
   negate: false
   required: true
   type: release_title
-  pattern: TrueHD
+  pattern: TrueHD (1)
 - name: Sonarr - ATMOS
   negate: false
   required: true
   type: release_title
-  pattern: ATMOS
+  pattern: ATMOS (2)
 - name: Sonarr - Not Basic Dolby Digital
   negate: true
   required: true
@@ -39,4 +39,9 @@ conditions:
   required: true
   type: release_title
   pattern: FLAC
+- name: Sonarr - Not 5.1 Surround
+  negate: true
+  required: true
+  type: release_title
+  pattern: 5.1 Surround
 tests: []

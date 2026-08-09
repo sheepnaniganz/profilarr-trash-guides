@@ -8,12 +8,12 @@ conditions:
   negate: false
   required: true
   type: release_title
-  pattern: Radarr - TrueHD (1)
+  pattern: TrueHD (1)
 - name: Radarr - ATMOS
   negate: false
   required: true
   type: release_title
-  pattern: Radarr - ATMOS (2)
+  pattern: ATMOS (2)
 - name: Radarr - Not Basic Dolby Digital
   negate: true
   required: true
@@ -39,4 +39,9 @@ conditions:
   required: true
   type: release_title
   pattern: FLAC
+- name: Radarr - Not 5.1 Surround
+  negate: true
+  required: true
+  type: release_title
+  pattern: 5.1 Surround
 tests: []

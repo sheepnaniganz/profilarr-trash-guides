@@ -14,6 +14,11 @@ conditions:
   required: true
   type: release_title
   pattern: ATMOS
+- name: Sonarr - Not ATMOS Group (non-5.1)
+  negate: true
+  required: true
+  type: release_title
+  pattern: ATMOS Group (non-5.1)
 - name: Sonarr - Not Dolby Digital Plus
   negate: true
   required: true
