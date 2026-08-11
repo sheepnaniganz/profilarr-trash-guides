@@ -1,0 +1,6 @@
+name: Radarr - Softboat
+pattern: ^(Softboat)$
+description: ''
+tags:
+- Radarr
+tests: []
