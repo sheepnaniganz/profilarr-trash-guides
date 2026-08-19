@@ -94,6 +94,11 @@ conditions:
   required: false
   type: release_group
   pattern: N3G4N
+- name: Sonarr - OldT
+  negate: false
+  required: false
+  type: release_group
+  pattern: OldT
 - name: Sonarr - PD
   negate: false
   required: false

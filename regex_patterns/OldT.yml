@@ -1,0 +1,7 @@
+name: OldT
+pattern: ^(OldT)$
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

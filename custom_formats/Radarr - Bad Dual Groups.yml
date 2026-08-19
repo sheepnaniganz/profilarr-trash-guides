@@ -94,6 +94,11 @@ conditions:
   required: false
   type: release_group
   pattern: N3G4N
+- name: Radarr - OldT
+  negate: false
+  required: false
+  type: release_group
+  pattern: OldT
 - name: Radarr - ONLYMOViE
   negate: false
   required: false
