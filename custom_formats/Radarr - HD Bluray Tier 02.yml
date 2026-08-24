@@ -22,11 +22,6 @@ conditions:
   required: true
   type: resolution
   resolution: 2160p
-- name: Radarr - ATELiER
-  negate: false
-  required: false
-  type: release_group
-  pattern: Radarr - ATELiER
 - name: Radarr - EA
   negate: false
   required: false
