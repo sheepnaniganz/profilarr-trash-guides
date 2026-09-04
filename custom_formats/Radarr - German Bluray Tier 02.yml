@@ -41,6 +41,11 @@ conditions:
   required: false
   type: release_group
   pattern: Radarr - RocketHD
+- name: Radarr - toto
+  negate: false
+  required: false
+  type: release_group
+  pattern: Radarr - toto
 - name: Radarr - Bluray
   negate: false
   required: true

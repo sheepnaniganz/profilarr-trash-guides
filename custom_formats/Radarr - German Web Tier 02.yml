@@ -45,6 +45,11 @@ conditions:
   required: false
   type: release_group
   pattern: Radarr - VECTOR (1)
+- name: Radarr - toto
+  negate: false
+  required: false
+  type: release_group
+  pattern: Radarr - toto
 - name: Radarr - WebDL
   negate: false
   required: false
