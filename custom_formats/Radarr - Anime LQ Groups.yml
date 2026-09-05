@@ -153,7 +153,7 @@ conditions:
   negate: false
   required: false
   type: release_title
-  pattern: DaddySubs
+  pattern: Radarr - DaddySubs
 - name: Radarr - DARKFLiX
   negate: false
   required: false
@@ -378,7 +378,7 @@ conditions:
   negate: false
   required: false
   type: release_title
-  pattern: Mites
+  pattern: Radarr - Mites
 - name: Radarr - Modders Bay
   negate: false
   required: false
@@ -523,7 +523,7 @@ conditions:
   negate: false
   required: false
   type: release_title
-  pattern: SAD
+  pattern: Radarr - SAD
 - name: Radarr - Salieri
   negate: false
   required: false

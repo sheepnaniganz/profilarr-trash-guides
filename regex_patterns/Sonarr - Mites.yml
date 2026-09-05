@@ -1,0 +1,6 @@
+name: Sonarr - Mites
+pattern: \[Mites\]|-Mites$
+description: ''
+tags:
+- Sonarr
+tests: []
