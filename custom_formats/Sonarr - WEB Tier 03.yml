@@ -20,11 +20,6 @@ conditions:
   required: false
   type: release_group
   pattern: Sonarr - DRACULA
-- name: Sonarr - HHWEB
-  negate: false
-  required: false
-  type: release_group
-  pattern: HHWEB
 - name: Sonarr - NINJACENTRAL
   negate: false
   required: false

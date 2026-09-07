@@ -20,11 +20,6 @@ conditions:
   required: false
   type: release_group
   pattern: Radarr - GNOMiSSiON
-- name: Radarr - HHWEB
-  negate: false
-  required: false
-  type: release_group
-  pattern: HHWEB
 - name: Radarr - NINJACENTRAL
   negate: false
   required: false
