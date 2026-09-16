@@ -1,0 +1,7 @@
+name: Fandango
+pattern: \b(FAH|FAND|FDNG)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
+description: ''
+tags:
+- Radarr
+- Sonarr
+tests: []

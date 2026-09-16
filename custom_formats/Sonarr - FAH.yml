@@ -1,5 +1,5 @@
-name: Sonarr - FAND
-description: '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#fand)'
+name: Sonarr - FAH
+description: '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#fah)'
 tags:
 - Sonarr
 - Release Title
@@ -9,7 +9,7 @@ conditions:
   negate: false
   required: false
   type: release_title
-  pattern: Sonarr - Fandango
+  pattern: Fandango
 - name: Sonarr - WEBDL
   negate: false
   required: false

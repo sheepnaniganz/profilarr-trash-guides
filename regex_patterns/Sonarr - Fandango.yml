@@ -1,6 +1,0 @@
-name: Sonarr - Fandango
-pattern: \b(fand)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)
-description: ''
-tags:
-- Sonarr
-tests: []

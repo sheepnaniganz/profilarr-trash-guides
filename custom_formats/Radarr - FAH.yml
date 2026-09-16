@@ -1,15 +1,15 @@
-name: Radarr - FAND
-description: '[Custom format from TRaSH-Guides.](https://trash-guides.info/Radarr/Radarr-collection-of-custom-formats#fand)'
+name: Radarr - FAH
+description: '[Custom format from TRaSH-Guides.](https://trash-guides.info/Radarr/Radarr-collection-of-custom-formats#fah)'
 tags:
 - Radarr
 - Release Title
 - Source
 conditions:
-- name: Radarr - FAND
+- name: Radarr - Fandango
   negate: false
   required: false
   type: release_title
-  pattern: Radarr - FAND
+  pattern: Fandango
 - name: Radarr - WEBDL
   negate: false
   required: false
