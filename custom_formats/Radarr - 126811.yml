@@ -10,7 +10,7 @@ conditions:
   negate: false
   required: true
   type: release_group
-  pattern: Radarr - 126811
+  pattern: '126811'
 - name: Radarr - Internal
   negate: false
   required: true

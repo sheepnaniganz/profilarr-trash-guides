@@ -80,8 +80,6 @@ custom_formats:
   score: -10000
 - name: Radarr - LQ (Release Title)
   score: -10000
-- name: Radarr - Wrong Language
-  score: -10000
 qualities:
 - id: -2
   name: Bluray|WEB-1080p

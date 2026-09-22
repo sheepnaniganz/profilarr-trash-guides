@@ -4,6 +4,11 @@ tags:
 - Radarr
 - Release Group
 conditions:
+- name: Radarr - 126811
+  negate: false
+  required: false
+  type: release_group
+  pattern: '126811'
 - name: Radarr - 24xHD
   negate: false
   required: false
