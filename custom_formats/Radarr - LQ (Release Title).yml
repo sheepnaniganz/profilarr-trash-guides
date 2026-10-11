@@ -59,6 +59,11 @@ conditions:
   required: false
   type: release_title
   pattern: Radarr - READ NOTE
+- name: Radarr - SiCFoI + CM4v
+  negate: false
+  required: false
+  type: release_title
+  pattern: Radarr - SiCFoI + CM4v
 - name: Radarr - SWTYBLZ
   negate: false
   required: false

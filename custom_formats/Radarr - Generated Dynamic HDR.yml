@@ -30,6 +30,11 @@ conditions:
   required: false
   type: release_group
   pattern: SasukeducK
+- name: Radarr - SumVision
+  negate: false
+  required: false
+  type: release_group
+  pattern: Radarr - SumVision
 - name: Radarr - tarunk9c
   negate: false
   required: false
@@ -50,14 +55,14 @@ conditions:
   required: false
   type: release_group
   pattern: Radarr - VisionXpert
-- name: Radarr - HDR10+
-  negate: false
-  required: false
-  type: release_title
-  pattern: HDR10+
 - name: Radarr - DV
   negate: false
   required: false
   type: release_title
   pattern: DV
+- name: Radarr - HDR10+
+  negate: false
+  required: false
+  type: release_title
+  pattern: HDR10+
 tests: []
